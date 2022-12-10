@@ -2,7 +2,8 @@
     "data": [
         {
             "id": 0,
-            "content": "abc"
+            "content": "abc",
+            "type": "xyz"
         }
     ]
 }
