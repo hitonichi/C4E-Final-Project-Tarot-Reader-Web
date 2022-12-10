@@ -1,9 +1,4 @@
 {
-    "data": [
-        {
-            "id": 0,
-            "content": "abc",
-            "type": "xyz"
-        }
-    ]
+    "cards": [],
+    "resources": []
 }
