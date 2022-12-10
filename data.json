@@ -1,10 +1,4 @@
 {
-    "data": [
-        {
-            "id": "sword1",
-            "contentInfant": "Your young",
-            "contentTeen": "Your quite young",
-            "contentAdult": "Your not young"
-        }
-    ]
+    "cards": [],
+    "resources": []
 }

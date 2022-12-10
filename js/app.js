@@ -10,9 +10,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-
+// Hello world
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
@@ -131,3 +131,28 @@ particlesJS('particles-js',
   }
 
 );
+
+const modalOverlay = document.getElementById('modal-overlay');
+const modalWrapper = document.getElementById('modal-wrapper');
+
+function renderContent(content) {
+  return () => {
+    modalOverlay.classList.add('show');
+    modalWrapper.classList.add('show');
+
+    // replace console.log with render content logic
+    console.log(content);
+  }
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('show');
+  modalWrapper.classList.remove('show');
+}
+
+// Main code
+const readNewBtn = document.getElementById('readNew');
+readNewBtn.addEventListener('click', renderContent('<div>abc</div>'));
+
+const closeModalBtn = document.getElementById('close-modal');
+closeModalBtn.addEventListener('click', closeModal);
