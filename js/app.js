@@ -136,8 +136,13 @@ const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
 
 function renderContent(content) {
-  modalOverlay.classList.add('show');
-  modalWrapper.classList.add('show');
+  return () => {
+    modalOverlay.classList.add('show');
+    modalWrapper.classList.add('show');
+
+    // replace console.log with render content logic
+    console.log(content);
+  }
 }
 
 function closeModal() {
@@ -147,7 +152,7 @@ function closeModal() {
 
 // Main code
 const readNewBtn = document.getElementById('readNew');
-readNewBtn.addEventListener('click', renderContent);
+readNewBtn.addEventListener('click', renderContent('<div>abc</div>'));
 
 const closeModalBtn = document.getElementById('close-modal');
 closeModalBtn.addEventListener('click', closeModal);
