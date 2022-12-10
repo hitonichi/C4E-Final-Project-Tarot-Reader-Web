@@ -10,9 +10,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-// Aloha - Hello world
+// Hello world
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
