@@ -201,6 +201,8 @@
 }
 
 .modal-top {
+  position: sticky;
+    top: 0;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -354,6 +356,10 @@
 .heading span{
   font-style: italic;
   font-size: 30px;
+}
+.close-modal-About{
+  position: sticky;
+  top: 0;
 }
 @media (max-width:991px){
   .heading {
