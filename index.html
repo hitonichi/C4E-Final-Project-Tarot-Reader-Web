@@ -8,7 +8,13 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" media="screen" href="css/index.css">
+  <!--==== FONTAWESOME CDN LINK ===-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -54,20 +60,204 @@
     <a id="readNew" class="nav-link">Get your daily reading</a>
     <a class="nav-link">View your reading history</a>
     <a class="nav-link">References & Disclaimer</a>
-    <a class="nav-link">About Us</a>
+    <a id="aboutUs" class="nav-link">About Us</a>
   </div>
   <div id="modal-overlay" class="modal-overlay">
+
   </div>
 
   <div id="modal-wrapper" class="modal-wrapper">
     <div class="modal-top">
       <img id="close-modal" style="width: 60px; height: 60px; cursor: pointer;" src="./assets/icons/icons8-close-91.png"
         alt="close-icon" />
+
     </div>
-    <!-- <div class="modal-content">
-  
-      </div> -->
+    <div class="modal-content" id="modal-content">
+
+    </div>
   </div>
+  <div id="modal-about" class="modal-about">
+    <div class="modal-top">
+      <img id="close-modal-About" style="width: 60px; height: 60px; cursor: pointer;"
+        src="./assets/icons/icons8-close-91.png" alt="close-icon" />
+
+    </div>
+    <div class="modal-content-about" id="modal-content-about">
+
+    <h1 class="heading"><span>meet </span>OUR TEAM</h1>
+ 
+   <div class="about-list">
+    <div class="list"> 
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/data/image1.jpg" alt="">
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web developer</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/data/image1.jpg" alt="">
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web developer</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/data/image1.jpg" alt="">
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web developer</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/data/image1.jpg" alt="">
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web developer</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/data/image1.jpg" alt="">
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web developer</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+   </div>
+   
+    </div>
+
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   <script src="js/common.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -134,6 +134,9 @@ particlesJS('particles-js',
 
 const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
+const modalAbout = document.getElementById('modal-about');
+const modalContent = document.getElementById('modal-content-about');
+
 
 function renderContent(content) {
   return () => {
@@ -144,7 +147,19 @@ function renderContent(content) {
     console.log(content);
   }
 }
+function renderAbout(content) {
+  return () => {
+    modalOverlay.classList.add('show');
+    modalAbout.classList.add('show');
 
+    // replace console.log with render content logic
+    console.log(content);
+  }
+}
+function closeAbout() {
+  modalOverlay.classList.remove('show');
+  modalAbout.classList.remove('show');
+}
 function closeModal() {
   modalOverlay.classList.remove('show');
   modalWrapper.classList.remove('show');
@@ -152,7 +167,23 @@ function closeModal() {
 
 // Main code
 const readNewBtn = document.getElementById('readNew');
-readNewBtn.addEventListener('click', renderContent('<div>abc</div>'));
+const aboutUsBtn = document.getElementById('aboutUs');
+readNewBtn.addEventListener('click', renderContent(
+
+
+));
+
+aboutUsBtn.addEventListener('click', renderAbout(
+
+  // modalContent.innerHTML += `<p>Hello</p><h1>xin chao</h1>`
+));
 
 const closeModalBtn = document.getElementById('close-modal');
+const closeModalBtnAbout = document.getElementById('close-modal-About');
 closeModalBtn.addEventListener('click', closeModal);
+closeModalBtnAbout.addEventListener('click', closeAbout);
+// window.onclick = function(event) {
+//   if (event.target == modalAbout) {
+//     modalAbout.style.display = "none";
+//   }
+// }

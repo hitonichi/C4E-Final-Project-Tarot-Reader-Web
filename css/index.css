@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 /* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
@@ -23,7 +24,11 @@
       ========================================================================== */
    
    /* ---- base ---- */
-   
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
    html,body{ 
        width:100%;
        height:100%;
@@ -117,6 +122,28 @@
 #content-wrapper h2 {
   font-size: x-large;
 }
+#content-about {
+  /* height: 400px; */
+  width: 300px;
+  background-color: #c7a5cb;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border: none;
+  border-radius: 30px;
+  padding: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content-about h2 {
+  font-size: x-large;
+}
 
 .nav-link {
   display: block;
@@ -156,6 +183,22 @@
   padding: 12px;
   display: none;
 }
+.modal-about {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: #f2f2f2;
+  z-index: 999;
+  border-radius: 20px;
+  padding: 12px;
+  display: none;
+}
 
 .modal-top {
   display: flex;
@@ -172,4 +215,164 @@
 
 .show {
   display: block;
+}
+.showAbout{
+  display: block;
+}
+/* About Us */
+.about-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.modal-content-about .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+.modal-content-about .card .image img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+ border: 3px solid #fff;
+  
+}
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 280px;
+}
+.card::before{
+  content: '';
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8 ;
+  border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+  position: relative;
+  z-index: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px;
+}
+.card .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .media-icons i{
+  color: #fff;
+  opacity: 0.7;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+.card .media-icons i:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+.name-profession .profession{
+  font-size: 15px;
+  font-weight: 500;
+}
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card .rating i{
+  font-size: 18px;
+  color: #7d2ae8;
+  margin: 0 2px;
+
+}
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.card .button button{
+  padding: 8px 22px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #7d2ae8;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background-color: #6616d0;
+}
+.swiper{
+  width: 950px;
+}
+.list{
+ 
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+
+}
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
+.heading {
+  font-size: 60px;
+  color: #7d2ae8;
+}
+.heading span{
+  font-style: italic;
+  font-size: 30px;
+}
+@media (max-width:991px){
+  .heading {
+    font-size: 45px;
+   
+  }
+  .heading span{
+   
+    font-size: 22.5px;
+  }
+}
+@media (max-width:775px) {
+  .heading {
+    font-size: 30px;
+   
+  }
+  .heading span{
+   
+    font-size: 15px;
+  }
+
 }
