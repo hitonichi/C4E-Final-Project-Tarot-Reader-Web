@@ -119,10 +119,7 @@
   transform: translate(-50%, -50%);
 }
 
-#content-wrapper h2 {
-  font-size: x-large;
-}
-#content-about {
+#content-wrapper {
   /* height: 400px; */
   width: 300px;
   background-color: #c7a5cb;
@@ -141,7 +138,7 @@
   transform: translate(-50%, -50%);
 }
 
-#content-about h2 {
+#content-wrapper h2 {
   font-size: x-large;
 }
 
@@ -183,7 +180,7 @@
   padding: 12px;
   display: none;
 }
-.modal-about {
+.modal-wrapper {
   overflow: scroll;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
@@ -229,14 +226,14 @@
   border-radius: 20px;
 }
 
-.modal-content-about .card .image{
+.modal-content .card .image{
   height: 140px;
   width: 140px;
   border-radius: 50%;
   padding: 3px;
   background: #7d2ae8;
 }
-.modal-content-about .card .image img{
+.modal-content .card .image img{
   object-fit: cover;
   height: 100%;
   width: 100%;

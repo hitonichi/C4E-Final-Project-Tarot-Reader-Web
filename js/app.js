@@ -1,3 +1,5 @@
+import data from '../data.json' assert { type: "json" };
+
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -134,8 +136,7 @@ particlesJS('particles-js',
 
 const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
-const modalAbout = document.getElementById('modal-about');
-const modalContent = document.getElementById('modal-content-about');
+const modalContent = document.getElementById('modal-content');
 
 
 function renderContent(content) {
@@ -144,22 +145,10 @@ function renderContent(content) {
     modalWrapper.classList.add('show');
 
     // replace console.log with render content logic
-    console.log(content);
+    modalContent.innerHTML = content;
   }
 }
-function renderAbout(content) {
-  return () => {
-    modalOverlay.classList.add('show');
-    modalAbout.classList.add('show');
 
-    // replace console.log with render content logic
-    console.log(content);
-  }
-}
-function closeAbout() {
-  modalOverlay.classList.remove('show');
-  modalAbout.classList.remove('show');
-}
 function closeModal() {
   modalOverlay.classList.remove('show');
   modalWrapper.classList.remove('show');
@@ -168,22 +157,66 @@ function closeModal() {
 // Main code
 const readNewBtn = document.getElementById('readNew');
 const aboutUsBtn = document.getElementById('aboutUs');
-readNewBtn.addEventListener('click', renderContent(
 
-
-));
-
-aboutUsBtn.addEventListener('click', renderAbout(
-
-  // modalContent.innerHTML += `<p>Hello</p><h1>xin chao</h1>`
-));
+readNewBtn.addEventListener('click', renderContent('<div>read new</div>'));
+aboutUsBtn.addEventListener('click', renderContent(renderMembers()));
 
 const closeModalBtn = document.getElementById('close-modal');
-const closeModalBtnAbout = document.getElementById('close-modal-About');
 closeModalBtn.addEventListener('click', closeModal);
-closeModalBtnAbout.addEventListener('click', closeAbout);
 // window.onclick = function(event) {
 //   if (event.target == modalAbout) {
 //     modalAbout.style.display = "none";
 //   }
 // }
+
+function renderMembers() {
+  let listMemberHTML = '';
+  data.members.forEach(({ name, image }) => {
+    listMemberHTML += `
+      <div class="swiper-slide card">
+      <div class="card-content">
+        <div class="image">
+          <img src="${image}" alt="">
+        </div>
+        <div class="media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="name-profession">
+          <span class="name">${name}</span>
+          <span class="profession">Web developer</span>
+        </div>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button">
+          <button class="aboutMe">About Me</button>
+          <button class="hireMe">Hire Me</button>
+        </div>
+      </div>
+    </div>
+    `
+  });
+  let finalHTML = `
+    <h1 class="heading"><span>meet </span>OUR TEAM</h1>
+    <div class="about-list">
+      <div class="list">
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+            ${listMemberHTML}
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  `
+
+  return finalHTML;
+}
