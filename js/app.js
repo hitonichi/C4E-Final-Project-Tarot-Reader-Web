@@ -163,11 +163,15 @@ aboutUsBtn.addEventListener('click', renderContent(renderMembers()));
 
 const closeModalBtn = document.getElementById('close-modal');
 closeModalBtn.addEventListener('click', closeModal);
-// window.onclick = function(event) {
-//   if (event.target == modalAbout) {
-//     modalAbout.style.display = "none";
-//   }
-// }
+
+// click outside modal => hide
+window.onclick = function (event) {
+  if (modalOverlay.classList.contains('show') && modalWrapper.classList.contains('show')) {
+    if (event.target === modalOverlay) {
+      closeModal();
+    }
+  }
+}
 
 function renderMembers() {
   let listMemberHTML = '';
