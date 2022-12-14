@@ -159,7 +159,24 @@ const readNewBtn = document.getElementById('readNew');
 const aboutUsBtn = document.getElementById('aboutUs');
 
 readNewBtn.addEventListener('click', renderContent('<div>read new</div>'));
-aboutUsBtn.addEventListener('click', renderContent(renderMembers()));
+aboutUsBtn.addEventListener('click', () => {
+  renderContent(renderMembers())();
+  new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
 
 const closeModalBtn = document.getElementById('close-modal');
 closeModalBtn.addEventListener('click', closeModal);
@@ -221,7 +238,6 @@ function renderMembers() {
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    
   `
 
   return finalHTML;
