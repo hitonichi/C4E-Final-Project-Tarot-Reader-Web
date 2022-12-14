@@ -349,6 +349,11 @@
   font-size: 30px;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s;
+}
+
 @media (max-width:991px){
   .heading {
     font-size: 45px;
