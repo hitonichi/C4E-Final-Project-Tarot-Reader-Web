@@ -208,6 +208,7 @@ function renderMembers() {
   });
   let finalHTML = `
     <h1 class="heading"><span>meet </span>OUR TEAM</h1>
+    
     <div class="about-list">
       <div class="list">
         <div class="swiper mySwiper container">
@@ -220,6 +221,7 @@ function renderMembers() {
         <div class="swiper-pagination"></div>
       </div>
     </div>
+    
   `
 
   return finalHTML;

@@ -205,12 +205,6 @@
   width: 100%;
 }
 
-.modal-content {
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);;
-  background-color: white;
-  border-radius: 20px;
-}
 
 .show {
   display: block;
@@ -354,10 +348,7 @@
   font-style: italic;
   font-size: 30px;
 }
-.close-modal-About{
-  position: sticky;
-  top: 0;
-}
+
 @media (max-width:991px){
   .heading {
     font-size: 45px;
