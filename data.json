@@ -1,5 +1,300 @@
 {
-    "cards": [],
+    "cards": [
+        {
+            "id": "1",
+            "name": "Ace of Wands",
+            "src": "./assets/images/data/wand_1",
+            "keyword": "Expansion, Inspiration",
+            "detail": "An extremely high energy crd, the Ae of Wands indicates new growth is all around you. Your ideas and outlook will expand, and creativity seems to be endless. This fertile time can also have literal meanings... Although it's thrilling to embark on your new journey, your good judgement is needed more than ever. Don't try to rush into it, take things slowly and carefully."
+        },
+        {
+            "id": "2",
+            "name": "Two of Wands",
+            "src": "./assets/images/data/wand_2",
+            "keyword": "Determination, Direction",
+            "detail": "With the Two of Wands, it's clear that you're on your way to success. You've focused on a goal and have o=boldly pointed all of your efforts in that direction. Since the suit of wands deals heavily with the mind, take this time to become aware of your thought patterns, specifically toward yourself, ask yourself questions like: What is the quality and tone of your thought? Are they mostly positive or negative? How well do you treat yourself on the journey to your highest dreams?"
+        },
+        {
+            "id": "3",
+            "name": "Three of Wands",
+            "src": "./assets/images/data/wand_3",
+            "keyword": "Envisioning the Future",
+            "detail": "The Three of Wands indicates you've had continued support from others (perhaps from your parents, friends, etc.). With their help, you've formed a sense of self, of your values and morals. But now it's time to rely on yourself for guidance. Clarify your goals, and cast others' needs and opinions aside. The future is infinite, and it is yours. No one else can see through its layers of light and Shadow."
+        },
+        {
+            "id": "4",
+            "name": "Four of Wands",
+            "src": "./assets/images/data/wand_4",
+            "keyword": "Completion, Celebration",
+            "detail": "You've done it! The Four of Wands is a card of completion. Your labors have been steady and strong, and the harvest will be plentiful. In other words, it's time to celebrate and congratulate on your harvest. There might be an upcoming event to mark this occasion, it can be a graduation, wedding, or celebration of some kind. Hence, enjoy yourself and those you love. This is an exciting and prosperous time."
+        },
+        {
+            "id": "5",
+            "name": "Five of Wands",
+            "src": "./assets/images/data/wand_5",
+            "keyword": "Scattered, Lack of Focus, Lost",
+            "detail": "The Five of Wands is a card of conflict. You may find yourself scattered, distracted and tend to everything and nothing. Since wands deal with our dreams and goals, it usually means this conflict resides within. Your energy moves outward in many directions, yet you are suffering inside. Take this card as a warning: Find ways to bring calm and focus to your mind, or these troubles will only increase."
+        },
+        {
+            "id": "6",
+            "name": "Six of Wands",
+            "src": "./assets/images/data/wand_6",
+            "keyword": "Victory, Rising Up",
+            "detail": "Sometimes this card is a reminder to look for evidence of how amazing you really are. You may already be feeling it, and if so, let that momentum carry you forward! But if you've been lacking confidence or unsure of yourself, it is important to confirm to yourself that you really are doing just fine. This card encourages you to follow the butterfly's example and tap into your strength of spirit when you are faced with adversity. Do not wait for external approval or permission to soar. Let yourself soar simply because it is a reflection of your true nature."
+        },
+        {
+            "id": "7",
+            "name": "Seven of Wands",
+            "src": "./assets/images/data/wand_7",
+            "keyword": "Courage against Odds",
+            "detail": "Sometimes this card asks you to consider the age old question: what's really worth fighting for? There are times when you are tasked with simply going with the flow of life, but the Seven of Wands reminds you that sometimes you need to go against the grain and be assertive! In her book Learning the Tarot, Joan Bunning mentions that this card can indicate either attacking OR defending. Both of these can be wise expenditures of energy when they are truly in alignment. Your task is to determine how to use these energies effectively and with integrity."
+        },
+        {
+            "id": "8",
+            "name": "Eight of Wands",
+            "src": "./assets/images/data/wand_8",
+            "keyword": "News, Change, Action",
+            "detail": "If you have a gut-level, instinctive knowing of what action you need to take, the Eight of Wands is a confirmation to take that action. Let yourself be tapped into the energies of the universe, and make your move when the timing is aligned! This card can also be an invitation to look for meaningful coincidences in your experience. It is likely that these coincidences are not random at all - they are little winks from the universe, giving you the nudges you need to keep moving in the right direction."
+        },
+        {
+            "id": "9",
+            "name": "Nine of Wands",
+            "src": "./assets/images/data/wand_9",
+            "keyword": "Inner Strength, Stamina",
+            "detail": "Sometimes you will see this card when you are being called to draw on your reserves of stamina. Remember that you are strong. You are capable of handing whatever life throws your way. At the same time, it is also important to protect your energy. Continuing on even when life has knocked you down is admirable, but it can also lead to weariness. As the saying goes, you're not sprinting, you're running a marathon. This means you need to ensure that you persevere for the long haul. Know that you do not need to be super human. Do what you can, but make sure your energy is fortified and protected all the while."
+        },
+        {
+            "id": "10",
+            "name": "Ten of Wands",
+            "src": "./assets/images/data/wand_10",
+            "keyword": "Burden, The Hard Road",
+            "detail": "The Ten of Wands may be an indicator that there's some energetic clutter taking up space in your life. It may now be necessary to tie up loose ends and let go of things that no longer light you up. Reaffirm your priorities and, as they say, be careful about biting off more than you can chew. Don't put too much pressure on yourself, especially if you feel like you're fighting an uphill battle. Manage your expectations of yourself and others. It may also be necessary to adapt a broader perspective. Instead of fixating on all the clutter in your view right now, take a step back and look at the bigger picture. An unobscured view could do you wonders!"
+        },
+        {
+            "id": "11",
+            "name": "Daughter of Wands",
+            "src": "./assets/images/data/wand_dau",
+            "keyword": "Free Spirit, Visionary",
+            "detail": "This card can remind you of your own artistic potential. Your very life is a work of art. You are being asked to step forward into something that resonates with your authentic self. You have the ability to make the world a more beautiful place. Use your charm to your advantage and cultivate a belief that you've got what it takes to succeed."
+        },
+        {
+            "id": "12",
+            "name": "Son of Wands",
+            "src": "./assets/images/data/wand_son",
+            "keyword": "Charming, Adventurous",
+            "detail": "This card can suggest that you need this type of fired up, adventurous energy in your life. What feels hot to you right now? How can you dive headfirst into what lights you up? March towards excitement, but be cautious of the implications of your actions."
+        },
+        {
+            "id": "13",
+            "name": "Mother of Wands",
+            "src": "./assets/images/data/wand_mom",
+            "keyword": "Attractive, Vibrant",
+            "detail": "The Mother of Wands may be asking you to follow her example. Practice gratitude and protect the things that matter to you. Keep your attitude bright and good things will come your way. Live with your whole heart, be devoted to your path. You're not here to half-ass things. Let your zest for life color everything you do!"
+        },
+        {
+            "id": "14",
+            "name": "Father of Wands",
+            "src": "./assets/images/data/wand_dad",
+            "keyword": "Creative, Charismatic",
+            "detail": "The Father of Wands may ask you not to shy away from your own power. What do you want to create? How can you use your hard-earned skills to make it happen? What plan feels both solid and exciting to you? The Father of Wands invites you to try out his approach to life and watch the results as they are magnetized towards you."
+        },
+        {
+            "id": "15",
+            "name": "Ace of Cups",
+            "src": "./assets/images/data/cup_1",
+            "keyword": "Love's Beginning",
+            "detail": "The Ace of Cups can signify the onset of feeling-based experiences. This card can remind you to open your heart, to allow your emotional energy to move freely. Allow yourself to feel whatever it is that you are feeling without labeling it as 'good' or 'bad.' This card often appears when we need to proceed with compassion and respect the signals our feelings are giving us."
+        },
+        {
+            "id": "16",
+            "name": "Two of Cups",
+            "src": "./assets/images/data/cup_2",
+            "keyword": "Connection, Love",
+            "detail": "The Two of Cups can encourage you to reach out to others. One of our most basic needs as human beings is to feel seen and valued. Tell someone you appreciate them, make an effort to strengthen a bond or offer a kind word. Despite the complications and conflict that accompany human interactions, this card shows our ability to forgive, bond, heal and encourage one another."
+        },
+        {
+            "id": "17",
+            "name": "Three of Cups",
+            "src": "./assets/images/data/cup_3",
+            "keyword": "Friendship, Support",
+            "detail": "This card can speak to any type of community togetherness. We humans are social animals, and we benefit from getting together with others to laugh, chat, and shoot the breeze. This card can be a good reminder to value and strengthen your friendships and your sense of community. You don't have to go it alone. When you need support, turn to those you can count on."
+        },
+        {
+            "id": "18",
+            "name": "Four of Cups",
+            "src": "./assets/images/data/cup_4",
+            "keyword": "Selfishness, Greed",
+            "detail": "In some instances, the Four of Cups may ask you to consider if you've been being whiny, sulky or apathetic. It's easy to get stuck in a “poor pitiful me” mindset, and if you're in that energy this card may be asking you to re-asess your attitude. In other instances, the Four of Cups might indicate that a healthy type of withdrawal is in order. Instead of looking to external factors to fix you, this card can indicate a need for you to come back home to yourself. Especially if you've been feeling emotionally wonky, this card can ask you to give yourself the space to let your feelings be processed and integrated."
+        },
+        {
+            "id": "19",
+            "name": "Five of Cups",
+            "src": "./assets/images/data/cup_5",
+            "keyword": "Loss, Grief, Regret",
+            "detail": "In a reading, this card might ask you to hold space for your difficult emotions without judgement. Remind yourself that it is okay to be not okay! Remember that even if you feel alone, you are not alone. Difficult feelings are part of the universal human experience, and they can tap you into something transformative. Feel your feelings and stay energetically open to the return of the light."
+        },
+        {
+            "id": "20",
+            "name": "Six of Cups",
+            "src": "./assets/images/data/cup_6",
+            "keyword": "Memories, Childhood",
+            "detail": "In a reading, this card can ask you to consider how you got to where you are. It can show the importance of reflecting who you are 'below the surface' - your personal past, as well as your ancestors and the collective unconscious - and acknowledging the effect these have on who you are 'above the surface.' This image in the Wild Unknown tarot adds another layer of complexity to this interpretation. Even when we can only see who people are above the surface, we can remind ourselves to practice kindness, and that all of us have a wild rainbow of roots beneath the surface."
+        },
+        {
+            "id": "21",
+            "name": "Seven of Cups",
+            "src": "./assets/images/data/cup_7",
+            "keyword": "Illusion, Deception",
+            "detail": "This card can ask you to examine your tangled feelings. Where are you caught up in mesmerizing fantasies? Where are you tricking yourself into thinking you're progressing when you're really just going in circles? There may be a need to sort out what is just smoke and mirrors and what is productive."
+        },
+        {
+            "id": "22",
+            "name": "Eight of Cups",
+            "src": "./assets/images/data/cup_8",
+            "keyword": "Moving on",
+            "detail": "This card might suggest that you consider where you find meaning in your life. Have you remained in situations that are no longer as fulfilling as they used to be? Is your emotional energy being drained? It may be time to assess what you need to leave behind in order to rise towards your next vista of fulfillment."
+        },
+        {
+            "id": "23",
+            "name": "Nine of Cups",
+            "src": "./assets/images/data/cup_9",
+            "keyword": "Bliss, Wishes Granted",
+            "detail": "This card can serve as a reminder to let yourself really enjoy the abundant pleasures in your life. Even things that seem simple, like a bowl of cereal and a roof over your head - can seem like ultimate luxuries if you have the right perspective. Feeling gratitude is essential. There's also an interesting balance at work in this card. On one hand, it is always a good idea to appreciate the luxuries we already have, but on the other hand, we don't want to become too complacent. It's good to continue to stretch ourselves and expand our horizons even when we are perfectly content where we are now."
+        },
+        {
+            "id": "24",
+            "name": "Ten of Cups",
+            "src": "./assets/images/data/cup_10",
+            "keyword": "Harmony, Joy",
+            "detail": "This card can remind you of the importance of gratitude. It can show times of joy and connection with yourself, your environment, and your fellow human beings. If you want to receive love, joy and harmony; start by being an embodiment of these things yourself"
+        },
+        {
+            "id": "25",
+            "name": "Daughter of Cups",
+            "src": "./assets/images/data/cup_dau",
+            "keyword": "Emotional, Romantic",
+            "detail": "In a reading, this card can ask you to open your heart. There is magic in vulnerability. Sometimes we need to trust our intuition and our own good nature. The Daughter of Cups reminds you to show your true colors to the world, because, as the song goes, they are beautiful like a rainbow."
+        },
+        {
+            "id": "26",
+            "name": "Son of Cups",
+            "src": "./assets/images/data/cup_son",
+            "keyword": "Peaceful, Introspective",
+            "detail": "This card can ask you approach a situation with sensitivity, imagination and compassion. This card can also call you to examine your deeper feelings and motivations. Is the emotional energy at work within you healthy? Or is it bubbling wildly? The Son of Cups offers you the chance to hone your skills in navigating your emotional landscape."
+        },
+        {
+            "id": "27",
+            "name": "Mother of Cups",
+            "src": "./assets/images/data/cup_mom",
+            "keyword": "Psychic, Insighful",
+            "detail": "The Mother of Cups can ask you to tap into the traits within yourself that align with her personality. Emotional sensitivity could be needed in a situation. This card can be a gentle reminder to tune into your own feeling states as well as the feeling states of others. There is a time for rationality and logic, but the Mother of Cups reminds us that intuition, trust and the whole spectrum of human emotion can and should also be integrated into our daily lives."
+        },
+        {
+            "id": "28",
+            "name": "Father of Cups",
+            "src": "./assets/images/data/cup_dad",
+            "keyword": "Supportive, Diplomatic",
+            "detail": "When you see a court card in a reading, it may be asking you to consider how you can embody the positive traits of the card. The Father of Cups might ask you to approach a situation with your head held high. It is possible to be sensitive while also maintaining your leadership. If the Father of Cups were to adopt a slogan, it might be the ever popular “keep calm and carry on.” He is a protector and an encourager. Keep facing forward and stay centered in your approach."
+        },
+        {
+            "id": "29",
+            "name": "Ace of Swords",
+            "src": "./assets/images/data/sword_1",
+            "keyword": "Truth, Mental Clarity",
+            "detail": "The Ace of Swords can speak of new ideas, fresh perspectives, and the potentials of the mental realm. This card can show times of clarity bursts which seem to be graspable, but are often fleeting. It can also be a card of undisguised honesty. Hidden motivations and beliefs are ready to be excavated, for worse or for better! This card can also suggest that the best approach in a given situation is to 'grasp onto' the qualities in the swords suit. Use your mental facilities to determine how to proceed. Be upfront with yourself and others. Activate your own cleverness to approach the situation at hand."
+        },
+        {
+            "id": "30",
+            "name": "Two of Swords",
+            "src": "./assets/images/data/sword_2",
+            "keyword": "Blocked Vision, Stalement",
+            "detail": "This card might ask you to consider what you are denying, repressing or avoiding. Are you straining to see things as they really are, or are you straining to see things as you WANT them to be? This card often appears when we feel like we are at a standstill. Avoidance doesn't make things go away. This card can ask you to ease up on all the mental energy you are spending on avoidance. Make a decision, get out of your head. Trust that the truth will set you free or it will imprison you, you get to decide which perspective to adopt."
+        },
+        {
+            "id": "31",
+            "name": "Three of Swords",
+            "src": "./assets/images/data/sword_3",
+            "keyword": "Heartbreak, Betrayal",
+            "detail": "This card can represent the worries, struggles, misunderstandings and negative thought patterns that are a natural part of the human experience. If you are experiencing painful thoughts, this card can ask you to consider how your thoughts themselves might be heightening your struggle. This card also serves as a reminder that we learn from difficult experiences. We can use our reasoning and story-telling skills to make sense of our experiences and lay the groundwork to move beyond the rawness."
+        },
+        {
+            "id": "32",
+            "name": "Four of Swords",
+            "src": "./assets/images/data/sword_4",
+            "keyword": "Stillness, Mental Power",
+            "detail": "This card can suggest consciously choosing to stabilize your thoughts. It can be useful to do whatever makes you feel the most centered and alert, such as journaling or meditation. Plan, prepare, and quietly stabilize yourself. Treat your mental energy as a precious resource, and do what you need to do to bring it back to full capacity."
+        },
+        {
+            "id": "33",
+            "name": "Five of Swords",
+            "src": "./assets/images/data/sword_5",
+            "keyword": "Self Destruction",
+            "detail": "This card can ask you to balance your own needs with the needs of others. Is there a way that everyone can win in this situation? Do not react and lash out in an auto-pilot manner. Instead of becoming your own worst enemy, become aware of destructive tendencies and change your approach."
+        },
+        {
+            "id": "34",
+            "name": "Six of Swords",
+            "src": "./assets/images/data/sword_6",
+            "keyword": "Hope at the End, Travel",
+            "detail": "This card can suggest that the climax of a struggle is over, but now we are sheltering ourselves from the storm, hoping that the rains will eventually lead us to salvation. This card can serve as an affirmation of how far you’ve come. You may still have a way to go, but you are on your way out of the thick. Things might still seem in flux and you may not be able to see your final destination yet, but you can choose to keep traveling in the right direction."
+        },
+        {
+            "id": "35",
+            "name": "Seven of Swords",
+            "src": "./assets/images/data/sword_7",
+            "keyword": "Secrecy, Self-interest",
+            "detail": "This card can ask you to take an honest assessment of any secrets you are keeping. Where are your intentions? Are you acting out of self-preservation or have your thought cycles become overly wry? If you really need to watch out for yourself, so be it. But if you are dodging responsibilities, it is time to re-evaluate your approach."
+        },
+        {
+            "id": "36",
+            "name": "Eight of Swords",
+            "src": "./assets/images/data/sword_8",
+            "keyword": "Trapped, Powerless",
+            "detail": "This card can ask you to look at the stories you are telling yourself about your options. If you seem to be stuck or entrenched in mental fog, this card can remind you to take steps towards reclaiming your personal power. Of course, this is easier said than done! You can begin by changing your thoughts, updating your stories. Instead of focusing on your confusion and lack of clarity, train yourself to look for steps - even small steps - towards freedom. When you consciously choose to loosen your mental constraints, a path forward will begin to emerge."
+        },
+        {
+            "id": "37",
+            "name": "Nine of Swords",
+            "src": "./assets/images/data/sword_9",
+            "keyword": "Nightmares, Anguish",
+            "detail": "This card can convey a need to loosen the grip of your worries, guilt, and negative assumptions. Remember to breathe! Things are likely not as bad as they seem. You may indeed be facing struggles, but remember that you do not have to be a prisoner of your own mind. Remember that no matter how bad things seem, the wilderness of your thoughts might only make them worse. Step back, calm down, and look at the big picture. Treat yourself with kindness and know trust that you're doing the best you can. Remind yourself that this too shall pass."
+        },
+        {
+            "id": "38",
+            "name": "Ten of Swords",
+            "src": "./assets/images/data/sword_10",
+            "keyword": "Rock bottom, Melodrama",
+            "detail": "This card often indicates that the crap storm has passed. You've gotten through the thick of it, and things can only get better from here. Instead of fixating on how terrible everything is, train yourself to look for the light. Say no to drama and martyrdom! It's good to be realistic about your struggles, but check yourself if you're exaggerating things."
+        },
+        {
+            "id": "39",
+            "name": "Daugher of Swords",
+            "src": "./assets/images/data/sword_dau",
+            "keyword": "Honesty, Insighful",
+            "detail": "The Daughter (or Page) of Swords can suggest that you approach a situation as she would. Instead of getting caught up in mind games, look for the simplest solution. Clear your head and determine which of your thoughts are essential for the task at hand. When in doubt, tell the truth."
+        },
+        {
+            "id": "40",
+            "name": "Son of Swords",
+            "src": "./assets/images/data/sword_son",
+            "keyword": "Determinede, Forceful",
+            "detail": "The Son of Swords can ask you to closely evaluate your approach in a given situation. Do you need to be more direct, honest and focused? Or on the other hand, have you lost sight of the bigger picture? Step back and examine your approach from an unbiased perspective, and then use your wisdom to determine your next step."
+        },
+        {
+            "id": 41,
+            "name": "Mother of Swords",
+            "src": "./assets/images/data/sword_mom",
+            "keyword": "Experienced, All-seeing",
+            "detail": "The Mother of Swords can ask you to consider how her traits might be at work in your situation. At her best, the Mother of Swords can be delightfully witty, clever, and helpful. Instead of seeing the world through rose colored glasses, this card reminds you that sometimes you need to embrace the beauty of being a realist."
+        },
+        {
+            "id": "42",
+            "name": "Father of Swords",
+            "src": "./assets/images/data/sword_dad",
+            "keyword": "Fair, Just, Analytical",
+            "detail": "The Father of Swords may ask you to evaluate how his approach is (or is not) at work in your situation. Are you acting in accordance with your moral principles? Are you thoroughly considering the facts? It is time to fully own your authority and make decisions with conviction."
+        }
+    ],
     "resources": [],
     "members": [
         {
@@ -17,7 +312,7 @@
             "name": "Khang",
             "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
         },
-         {
+        {
             "id": 3,
             "name": "Khang",
             "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
