@@ -198,7 +198,7 @@ body {
   border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background: rgb(62, 108, 247);
+  background: #8437e9;
 }
 
 html {
@@ -407,12 +407,15 @@ canvas {
 }
 
 .card {
+  cursor: pointer;
   position: relative;
   background: #fff;
   border-radius: 20px;
   margin: 20px 0;
   width: 280px;
+  filter: grayscale(100);
 }
+
 
 .card::before {
   content: '';
@@ -540,6 +543,7 @@ canvas {
 .card:hover {
   transform: translateY(-10px);
   transition: transform 0.5s;
+  filter: grayscale(0);
 }
 
 .comments {

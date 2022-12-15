@@ -300,27 +300,27 @@
         {
             "id": 0,
             "name": "Khang",
-            "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 1,
             "name": "Khang",
-            "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 2,
             "name": "Khang",
-            "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 3,
             "name": "Khang",
-            "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 4,
             "name": "Khang",
-            "image": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/v/avatar-1615695904-2089-1615696022.jpg"
+            "image": "assets/images/data/image1.jpg"
         }
     ]
 }
