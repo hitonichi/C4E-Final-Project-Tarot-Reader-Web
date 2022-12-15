@@ -238,6 +238,19 @@ function renderMembers() {
         <div class="swiper-pagination"></div>
       </div>
     </div>
+    <div class="comments">
+    <form onsubmit="  alert('Cảm ơn phản hồi của bạn') ; reset();return false;">
+      <h3>GET IN TOUCH </h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <small class="erro"></small>
+      <input type="email" id="email" placeholder="Email id" required>
+      <small class="erro"></small>
+      <textarea id="massage" rows="4" placeholder="Comments"></textarea>
+      <small class="erro"></small>
+      <button type="submit" id="submitForm">Send</button>
+      <p id="success"></p>
+    </form>
+  </div>
   `
 
   return finalHTML;
