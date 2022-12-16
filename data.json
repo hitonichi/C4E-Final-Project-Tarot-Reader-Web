@@ -236,7 +236,7 @@
             "name": "Six of Swords",
             "src": "./assets/images/data/sword_6",
             "keyword": "Hope at the End, Travel",
-            "detail": "This card can suggest that the climax of a struggle is over, but now we are sheltering ourselves from the storm, hoping that the rains will eventually lead us to salvation. This card can serve as an affirmation of how far you’ve come. You may still have a way to go, but you are on your way out of the thick. Things might still seem in flux and you may not be able to see your final destination yet, but you can choose to keep traveling in the right direction."
+            "detail": "This card can suggest that the climax of a struggle is over, but now we are sheltering ourselves from the storm, hoping that the rains will eventually lead us to salvation. This card can serve as an affirmation of how far you've come. You may still have a way to go, but you are on your way out of the thick. Things might still seem in flux and you may not be able to see your final destination yet, but you can choose to keep traveling in the right direction."
         },
         {
             "id": "35",
@@ -281,7 +281,7 @@
             "detail": "The Son of Swords can ask you to closely evaluate your approach in a given situation. Do you need to be more direct, honest and focused? Or on the other hand, have you lost sight of the bigger picture? Step back and examine your approach from an unbiased perspective, and then use your wisdom to determine your next step."
         },
         {
-            "id": 41,
+            "id": "41",
             "name": "Mother of Swords",
             "src": "./assets/images/data/sword_mom",
             "keyword": "Experienced, All-seeing",
@@ -293,6 +293,258 @@
             "src": "./assets/images/data/sword_dad",
             "keyword": "Fair, Just, Analytical",
             "detail": "The Father of Swords may ask you to evaluate how his approach is (or is not) at work in your situation. Are you acting in accordance with your moral principles? Are you thoroughly considering the facts? It is time to fully own your authority and make decisions with conviction."
+        },
+        {
+            "id": "43",
+            "name": "Ace of Pentacles",
+            "src": "./assets/images/data/pen_1",
+            "keyword": "Prosperous Beginnings",
+            "detail": "When you see the Ace of Pentacles, it's useful to consider what “seeds” you are sowing. What potential is already taking shape in your life? And for that matter, what potential would you LIKE to see take shape? Aces are a reminder of your autonomy, and the Ace of Pentacles asks you to be open to letting healthy, prosperous seeds begin to grow. When you are open to gifts, you are more likely to receive gifts. The Ace of Pentacles asks you to be receptive to whatever gifts and manifestations are in your highest good."
+        },
+        {
+            "id": "44",
+            "name": "Two of Pentacles",
+            "src": "./assets/images/data/pen_2",
+            "keyword": "Balance, Change",
+            "detail": "This card often shows a human figure juggling two pentacles. Juggling is an act that takes precision and concentration, but it's also somewhat of a game. Therefore, this 147card can be a reminder that life isn't just about doing everything “right.” Instead, life is about constantly finding ways you can take meaningful actions with a playful attitude. It's also helpful to be flexible. Don't push yourself so hard that you break, but stretching yourself is healthy. Don't get discouraged if what used to work no longer works. Instead, embrace the flexibility of trying and refrain from judging what transpires as a success or a failure. The Two of Pentacles echoes the old saying that life really is like a game, so don't take things TOO seriously!"
+        },
+        {
+            "id": "45",
+            "name": "Three of Pentacles",
+            "src": "./assets/images/data/pen_3",
+            "keyword": "Teamwork, Determination",
+            "detail": "This card can ask you to consider the skills you currently need. What are you trying to accomplish? Do you have a clear method to get you there? What external resources can help you continue to climb your proverbial mountain? You are capable of accomplishing heroic tasks, but you've got to tap into your true determination. Be respectful of the skills that others bring to the table, and let your own individual strengths shine through. You'll only reach the summit if you find as much fulfillment in taking each step as you expect to find when your goal is complete."
+        },
+        {
+            "id": "46",
+            "name": "Four of Pentacles",
+            "src": "./assets/images/data/pen_4",
+            "keyword": "Possession, Control",
+            "detail": "This card can ask you to examine what, and why, you are trying so hard to preserve. Where do you feel that things will fall apart without your management? What ideas, behavior patterns, goals or objects are you clutching? Is your energy being used efficiently, or to your detriment? It's essential to find the balance between preserving the things that you value while also being open to the natural ebb and flow of energies. You don't have to cling so tightly. You can learn to relinquish a little control. You'll have so much more energy to use productively when you're operating less from a place of force and more from a place of trust"
+        },
+        {
+            "id": "47",
+            "name": "Five of Pentacles",
+            "src": "./assets/images/data/pen_5",
+            "keyword": "Sadness, Illness",
+            "detail": "This card can ask you to look at where you are experiencing deprivation. It is entirely possible that your lack is caused by an external source, but just as often we are the bearers of our own deprivation. Are you giving yourself the support, encouragement and inner resources you need? It may also be necessary to look outside the box. The top half of the card is filled with a white light - there is goodness to seek, if we remember to place our focus there. If you truly are in a situation largely outside of your control, this card asks you to remember that this won't last forever. Energy ebbs and flows. Hard times come and go. Do what you can, and don't forget to ask for help! Others want to see you thrive. The Five of Pentacles may be reminding you to prioritize our spiritual wealth. It is easy to fall into a scarcity mindset, and life becomes very draining when we set up camp there. What will support you not only in a material sense, but also in a spiritual sense? It's time to choose to look towards those things. When you focus on seeing potential, you'll start to find resources in unexpected places."
+        },
+        {
+            "id": "48",
+            "name": "Six of Pentacles",
+            "src": "./assets/images/data/pen_6",
+            "keyword": "Prosperity, Growth",
+            "detail": "In a reading, this card often speaks to the dynamics of both giving and receiving. What do you have a whole lot of? What is ripe and juicy within you? How can you give some of that goodness to the world? When you've got bounty, share it! Offer words of wisdom. Lend a helping hand. Support, encourage. And on the other hand, where could you still use a leg up? Where might you find just what you need? How can you graciously receive praise, assistance and gifts? Cultivate the belief that giving and receiving are equally noble. Some days you will be in one position, and some days you will be in the other. Learn to embody the energy of each with grace, and you'll blossom."
+        },
+        {
+            "id": "49",
+            "name": "Seven of Pentacles",
+            "src": "./assets/images/data/pen_7",
+            "keyword": "Contemplation, Reward",
+            "detail": "When you see the Seven of Pentacles, it can be a sign to step back and analyzing the life you are building. Have you been working diligently to create something meaningful, or have you been drifting? Are things developing in a fulfilling way, or has something gotten off track? Don't be afraid to set goals, because you can always adjust them as needed! Get re-organized. Evaluate where things are going well and where you could use a different approach. Make a blueprint. Check in with the results of your choices, work and efforts so that you can move forward productively."
+        },
+        {
+            "id": "50",
+            "name": "Eight of Pentacles",
+            "src": "./assets/images/data/pen_8",
+            "keyword": "Craftmanship, Skill",
+            "detail": "When you see this card, it is a signal to tap into your good old fashioned work ethic. The spider is not swayed by distractions, doubts or outside influences. Be like the spider – just do what you need to do without drama. If you want to build anything meaningful in your life, you need to be ceaselessly devoted to the work that it entails. How can you deepen your craft, your practice, your awareness? What skills do you have that should be activated in your current situation? Keep learning, keep evolving, and keep doing the work you need to do."
+        },
+        {
+            "id": "51",
+            "name": "Nine of Pentacles",
+            "src": "./assets/images/data/pen_9",
+            "keyword": "Happiness, Healthy Home",
+            "detail": "This card can ask you to consider your current relationship with your worldly pursuits. Are you satisfied with your living situation? What are you getting from the foods you're eating? Are you engaging in activities that make you feel vital and capable? It may also be wise to consider your sense of sovereignty. Are you governing yourself wisely? Are you working effectively with the less savory aspects of your nature? Consider how you might refine the ways that you show up in the world. Remember that you are (as we all are) a work in progress. Enjoy where you are now, and continuing the fine work of building a life that is just right for you."
+        },
+        {
+            "id": "52",
+            "name": "Ten of Pentacles",
+            "src": "./assets/images/data/pen_10",
+            "keyword": "Generousity, Fulfillment",
+            "detail": "When you see this card, it may ask you to examine your relationship with fulfillment. Are you satisfied with the current structures of your life? Are you enjoying your routines? What is your definition of success, and how does that definition match up with your current reality? Remember that no matter how finite your current situation seems, life is still dynamic. There's always room for change and growth. It is entirely possible to be expansive while also being stable. This card asks you to find that centered approach for yourself."
+        },
+        {
+            "id": "53",
+            "name": "Daughter of Pentacles",
+            "src": "./assets/images/data/pen_dau",
+            "keyword": "Responsible, Kind",
+            "detail": "When you see a court card in a reading, it is often asking you to consider how you might embody the traits of that card. This card can ask you to accept where you are, use what you've got, and be resourceful. What are you currently doing that is highly effective? Keep that up! And on the other hand, where do you feel insecure? What can you do to keep building your skills and confidence? You've still got a lot to learn, but you're always gaining useful experience. Take ownership for your own progress. Keep your heart in the right place and stay willing to grow. You've got this!"
+        },
+        {
+            "id": "54",
+            "name": "Son of Pentacles",
+            "src": "./assets/images/data/pen_son",
+            "keyword": "Loyal, Determined",
+            "detail": "This card may ask you to consider how you've been approaching a given situation. It could be necessary to call upon your work ethic, your willingness to assess reality and act accordingly. If you want concrete results, you've got to take useful action. Just make sure you're not obsessing with tiny details to the detriment of seeing the big picture!"
+        },
+        {
+            "id": "55",
+            "name": "Mother of Pentacles",
+            "src": "./assets/images/data/pen_mom",
+            "keyword": "Domestic, Loving",
+            "detail": "The Mother of Pentacles can ask you how her character traits are currently impacting your life. Are you attuned with your physical surroundings? Are you giving enough attention to the people, plants and animals in your life? Consider how much you are willing to give help and support to yourself and others. This card can also highlight a need for trust. Are you keeping the promises you make to yourself? Are you taking tangible steps to improve your life and the world around you? You have the resources you need to move through any obstacles. If you're having a hard time tapping into those resources, remember it is okay to turn to others for support."
+        },
+        {
+            "id": "56",
+            "name": "Father of Pentacles",
+            "src": "./assets/images/data/pen_dad",
+            "keyword": "Steady, Entrepreneurial",
+            "detail": "This card can ask you to consider how the Father of Pentacles' personality traits are playing out in your situation. Consider how consistency and reliability are being portrayed by yourself and others. If you're facing challenges, consider what competencies you've developed that could be useful. Focus on solutions and step fully into your selfworth. Accentuate what you CAN do and own your abilities!"
+        },
+        {
+            "id": "57",
+            "name": "The Fool",
+            "src": "./assets/images/data/fool_0",
+            "keyword": "Innocence, Naivety, Starting out, Spontaneity",
+            "detail": "This card can ask you to consider the timeless conundrum of the Fool: are you naïve, about to leap unprepared and face disaster? Or are you filled with a spiritual trust that the universe will support your leap? The Fool asks you to tune into your primal instincts instead of overthinking. The Fool is also a reminder that there are no right or wrong decisions. The most important thing, the Fool might advise you, is to say YES to life in whatever way feels expansive for you. Sometimes your best option is to remain on the branch until you are ready. But more often, the Fool nudges you to open your heart, set out, and trust that whatever happens from there is a meaningful adventure."
+        },
+        {
+            "id": "58",
+            "name": "The Magician",
+            "src": "./assets/images/data/magician_1",
+            "keyword": "Action, Self-empowerment, Purpose",
+            "detail": "In a reading, the Magician can speak to the power of concentration. Where is your attention being placed? The direction of your concentration may need to be re-adjusted towards your capabilities. Instead of looking to what you do not have or what you wish you had, the Magician invites you to pay attention to all that you DO have. Too often we sit around waiting for life to happen to us. The Magician invites YOU to happen to LIFE. This is how you step fully in to your radiating power. The four suits present in the card speak to your mental, physical, emotional and creative energy. Are you purposefully paying attention to these aspects of yourself? It is time to check-in with how you are distributing those various energies. Make sure you are doing so with conscious intent, giving your power and your energy to things that really matter. The Magician shows that you can be a conscious creator. Be willing to take action when you know what needs to be done. When you walk purposefully through life, awakened to the always-present light of your creativity, you are embodying the ways of the Magician. You are capable of directing unlimited universal creativity through your consciousness - let yourself step fully and confidently into that truth."
+        },
+        {
+            "id": "59",
+            "name": "The High Priestest",
+            "src": "./assets/images/data/highPriest_2",
+            "keyword": "Mystery, Non-action, Going within",
+            "detail": "This card could indicate that your intuitive understanding is essential right now. Instead of straining to pin down answers with your conscious mind, listen to something deeper. The High Priestess invites you to pay attention to your dreams, your visions, your meditations. The answers that you seek are likely right there within you, but you need to shift your perspective in order to access them. This card can ask you to let yourself sit serenely with mysteries. Questions are often more useful than answers. The sphere before her represents your own inner sphere of spiritual energy. Now is a powerful time to let yourself sit with that energy, to take a few deep breaths and let it be exactly what it is without forcing it to take any particular shape. It's often when you stop straining so hard that some type of knowledge finally 'clicks' within you. The High Priestess is linked to your intuition and inner knowing. She invites you to sit with the shadowy, less easily accessible parts of yourself. Get to know the whole spectrum of your inner landscape. The more intimately acquainted you become with your whole self, the more of a constant connection you'll have to your intuitive knowing."
+        },
+        {
+            "id": "60",
+            "name": "The Empress",
+            "src": "./assets/images/data/empress_3",
+            "keyword": "The Mother, Sensuality, Creation, Nature",
+            "detail": "When the Empress appears, she might ask you to consider what you are nurturing, as well as what may need to be nurtured within you. She often shows up in readings to highlight the importance of self-love and self-care. Are you tending to yourself with as much reverence as you would give to someone you love dearly? Giving yourself that fertile soil to grow from is essential. This card can also ask you to place your focus on contributing to the cycles of life and creation. You are a sacred conductor of life-force, and now may be the perfect time to direct that life-force into creating something beautiful.Life is rich with opportunities for you to grow, to experience your senses, and to step fully into your authentic nature. The Empress encourages you to find those opportunities and step into them fully and completely."
+        },
+        {
+            "id": "61",
+            "name": "The Emperor",
+            "src": "./assets/images/data/emperor_4",
+            "keyword": "The Father, Protection, Logic, Stability",
+            "detail": "The Emperor might ask you to consider where the themes of structure, control and order are at work in your life. Are these energies helping you thrive, or are they boxing you in? At times this card can speak of external authority figures, but it often speaks to your internal sense of authority. When this card appears, it may ask you to consider how you can further step into your role as the CEO of your life. It may be time to step up and take control. If you want your life to go in a particular direction, the Emperor asks you to ensure you are steering your ship that way. Self-discipline can be a form of self-love if administered correctly. The Emperor asks you to develop healthy self-discipline. Stay accountable but do not set unrealistic standards for yourself. Setting up boundaries for yourself might can be restricting, but if done right the boundaries you establish for yourself are the very things that will lead you to a greater sense of freedom."
+        },
+        {
+            "id": "62",
+            "name": "The Hierophant",
+            "src": "./assets/images/data/hierophant_5",
+            "keyword": "Mentor, Working within the System",
+            "detail": "When the Hierophant appears, it may be useful to consider your relationship with societal authority figures. Would it be beneficial for you to engage in ritual or learn from an expert? Or on the other hand, is your individuality being stifled by the pressure to follow the crowd? This card can also ask you to revisit your own belief systems. Our pre-determined thoughts and viewpoints are always influencing us, and this influence often takes place on an unconscious level. In a reading, this card may be asking you to bring a conscious awareness to how your beliefs are influencing your experience of reality."
+        },
+        {
+            "id": "63",
+            "name": "The Lovers",
+            "src": "./assets/images/data/lovers_6",
+            "keyword": "Union, Desire, Values, Joy",
+            "detail": "This card may be asking you to consider the relationships in your life. It might be a good time to focus on creating connections that are uplifting, yet still leave space for your unique identity. Beyond relationships, this card can ask you to consider your passions in general. What is currently lighting you up? This card can be a gentle nudge to explore your desires and to go towards the things that make you feel joyful."
+        },
+        {
+            "id": "64",
+            "name": "The Chariot",
+            "src": "./assets/images/data/chariot_7",
+            "keyword": "Strong Will, Achievement, Triumph",
+            "detail": "In a positive sense, when the Chariot shows up in a reading it can remind you to tap into your dogged determination. This card can be the kick in the pants you need to do hard things. Instead of avoiding difficulty, the Chariot challenges you to be like the horse in this card and face challenges head-on. Be willing to start sorting through your whatever obstacles you currently have. This might not always be easy, but if you believe in yourself you CAN do hard things. The Chariot also asks you to consider the current state of your ego. Do you have a healthy sense of self confidence? Or on the other hand, have you become so set in your ways that you're missing the bigger picture? Be equally willing to own your strengths AND your opportunities for further growth."
+        },
+        {
+            "id": "65",
+            "name": "Justice",
+            "src": "./assets/images/data/justice_8",
+            "keyword": "Decisions, Karma",
+            "detail": "In a reading, Justice might ask you to consider how your own choices are influencing your reality. It may be time for you to give some weighted consideration to all of your options and make a careful choice about how to proceed. Remember that things are nuanced and you may not find one easy “right answer” right away. Be willing to look at your situation objectively and respect the full complexity at work. This card is also a good reminder to step into your full integrity. Take back your power to define your own beliefs and to stand up for what is right."
+        },
+        {
+            "id": "66",
+            "name": "The Hermit",
+            "src": "./assets/images/data/hermit_9",
+            "keyword": "Solitude, Self-reflection, Meditation",
+            "detail": "When the Hermit appears, it is often a reminder to activate your internal guidance. Instead of seeking the answers from other people or avoiding being alone with your thoughts, the Hermit asks you to meditate. Journal. Contemplate. Turn your focus away from external distractions and explore what is within you. If you do feel as though external support could be useful, remember that the best mentors are those who only guide you closer to your own truth."
+        },
+        {
+            "id": "67",
+            "name": "The Wheel of Fortune",
+            "src": "./assets/images/data/wheelOfFortune_10",
+            "keyword": "Destiny, Fate, Change of Course",
+            "detail": "The Wheel of Fortune draws your attention to changes that are currently at work both within you and in your outer world. If you have been avoiding accepting these changes, it may be time to face them directly. Remember that from a cosmic perspective, the shifts happening for you are not necessarily 'positive' or 'negative.' Instead, they are neutral forces. If at this time you feel a negative emotional reaction to the turning hands of fate, remind yourself that you may not yet be able to see the bigger picture. As the imagery in the Wild Unknown really shows, the workings of fate are complex and tangled. Practice shifting your perspective so that you can best process whatever turning point you are reaching."
+        },
+        {
+            "id": "68",
+            "name": "Strength",
+            "src": "./assets/images/data/strength_11",
+            "keyword": "Patience, Mastery of Emotions, Courage",
+            "detail": "This card is often a reminder of your inner courage. Just as the lion on the card radiates both patience and boldness, you hold both of these traits within yourself. It is time to step into your reserve of inner courage and do what needs to be done. Have patience with yourself, and have compassion for those you encounter. Remember that you don’t need to force anything to happen. Instead, look at how you can conserve your energy by working WITH your challenges. When you are simultaneously calm and courageous, you are truly a force to be reckoned with."
+        },
+        {
+            "id": "69",
+            "name": "The Hanged Man",
+            "src": "./assets/images/data/hangedMan_12",
+            "keyword": "Sacrifice, Letting go, New Perspectives",
+            "detail": "This card asks you to consider the infinite perspectives currently available to you. Challenge yourself to consider your situation from a new angle, coerce yourself to question certain aspects of your reality. Doing this might require you to devote to surrendering your ego's desire to control. Letting go of the urge to control is very much easier said than done! In fact, learning to surrender can be incredibly uncomfortable. Remind yourself that experiencing discomfort is okay. In fact, this discomfort is absolutely necessary for your spiritual development."
+        },
+        {
+            "id": "70",
+            "name": "Death",
+            "src": "./assets/images/data/death_13",
+            "keyword": "Necessary Endings, Closure, Transformation",
+            "detail": "This card does NOT need to be negative or scary! But it does pack a punch, and may ask you to dig into your shadow. Death might ask you to examine what changes, transformations or endings are currently at work for you. From a personal growth standpoint, this card may particularly challenge you to confront what YOU need to end. If you've been entrenched in unhealthy patterns, if you've been keeping yourself in a situation you know is not good for you…it's probably time to end that stuff once and for all. Death is a part of life, and most deaths are metaphoric NOT literal. Remind yourself that we are all subject to these indiscriminate energies. There are times that you can enact your will to keep something going, but Death asks you to accept the times when endings are imminent. Cultivate the belief that whatever transformations occur for you are making space for you to emerge into a fresh new chapter. Decaying material must be trimmed from plants in order for them to grow new life - in a metaphysical sense, you must also be willing to be pruned of what is dead in order for you to become more fully alive."
+        },
+        {
+            "id": "71",
+            "name": "Temperance",
+            "src": "./assets/images/data/temperance_14",
+            "keyword": "Healing, Renewal, Balance",
+            "detail": "It is essential to cultivate your awareness of what energies are at work around you. In a reading, Temperance may ask you to become aware of these energies. Is there too much or too little of one energy or another in your life? It may be time to consider how you can return to a sense of equilibrium. Temperance also shows the power you gain when you embrace your contradictions. Instead of expecting yourself to fall into only one extreme way of being, let yourself be all that you are - even when those things seem to clash. You have the ability to temper all of your inner energies so that they work together to form a unique, powerful blend."
+        },
+        {
+            "id": "72",
+            "name": "The Devil",
+            "src": "./assets/images/data/devil_15",
+            "keyword": "Negativity, Materialism, Addiction",
+            "detail": "The Devil card often draws your attention to where you feel trapped, restricted or blocked. In some cases, this bondage is caused by an external situation (a negative work environment, a toxic relationship and so on). But more often, these energies are manifesting internally. As such, it is important to willingly look at your inner demons: your secrets, your shames, your addictive tendencies. This can seem quite heavy, but the truth is that simply acknowledging what is enslaving you is a hugely powerful step in finding liberation. Once you are able to clearly identify your demons, you can get to know them better and find appropriate ways to free yourself. This card can also serve as a reminder to look for satisfaction beyond the material trappings of your life. It is natural to crave certain comforts of the flesh, but those passing things rarely bring you lasting fulfillment. The Devil asks you to look beyond the trappings of the material realm and make space also for the ethereal things that bring your life meaning."
+        },
+        {
+            "id": "73",
+            "name": "The Tower",
+            "src": "./assets/images/data/tower_16",
+            "keyword": "Unexpected Upheaval, Crisis, Change",
+            "detail": "The Tower often appears in times of intense shifts and upheavals. Keep in mind this applies just as much to internal shifts as external ones. You might experience a lot of resistance to these changes. This card asks you to consider in what ways dramatic change in your life could be valuable - even if at first glance it only seems destructive. Remember that in the midst of it, things might feel chaotic. But resisting and fighting against this chaos only makes the blow harder. At times, Tower energy can lead you to feel like you're having a breakdown. But look for the ways in which what could be labeled as a breakdown might actually be a BREAKTHROUGH. You may be experiencing a shake up so that you can then experience a new, more empowering level of awareness."
+        },
+        {
+            "id": "74",
+            "name": "The Star",
+            "src": "./assets/images/data/star_17",
+            "keyword": "Hope, Peace of Mind, Generosity",
+            "detail": "The Star is often a reminder to listen to the quiet whispers of your inspiration. What “north star” are you being beckoned to follow? Even if you have been hurt in the past, now may be the time to step forward with renewed hope. Healing, integration and acceptance are readily available to you. Let your guard down and experience this holistic energy."
+        },
+        {
+            "id": "75",
+            "name": "The Moon",
+            "src": "./assets/images/data/moon_18",
+            "keyword": "Lack of Direction, Vivid Dream, Fears",
+            "detail": "When you see the Moon, it may be useful to consider where you are currently experiencing bewilderment. Your imagination is the most powerful tool you have when it is used with reverence. But when your imagination runs away with you, you may find yourself lost in the shadowy confusion of your unconscious mind. It can be so healthy to make space for the trippy and the abnormal in your life. But it is also important to make sure you don't lose your orientation completely. Look forways that you can let your imagination roam while maintaining your connection to something solid."
+        },
+        {
+            "id": "76",
+            "name": "The Sun",
+            "src": "./assets/images/data/sun_19",
+            "keyword": "New Vitality, Assurance, Enlightenment",
+            "detail": "When you see the Sun, it might be useful to ask yourself if you are saying YES to life. Are you fully plugged in to the radiant energies at work within you, or are you unconsciously dulling those energies? The Sun asks you to take whatever bold action would make you feel the most expansive at this time. If you've been experiencing some struggles, this card can be a sign that life is still on your side. New viewpoints of greater clarity and understanding are available to you, choose to let yourself bask in that warmth."
+        },
+        {
+            "id": "77",
+            "name": "Judgement",
+            "src": "./assets/images/data/judgement_20",
+            "keyword": "Rebirth, Forgiveness, Awakening",
+            "detail": "When you see the Judgement card, you may be feeling “called” towards one thing or another. Now is a powerful time to listen to your inner voice, to tune into the messages of the Universe. Let your ego quiet and align yourself with the murmurs of your deeper self. This is how you can more clearly hear what is “calling” you. Your story going forward does not have to be marred by the story of your past. Now is an excellent time to energetically cleanse what is no longer serving you, to forgive yourself and to believe in all that is possible. The most effective way to find fulfillment is to constantly awaken to your callings, to embrace completely what gives your life purpose."
+        },
+        {
+            "id": "78",
+            "name": "The World",
+            "src": "./assets/images/data/21",
+            "keyword": "Completion, Wholeness, Contentment",
+            "detail": "This card often shows up to remind you that you are whole and complete exactly as you are. Even when you feel lacking or not enough, the World reminds you that you ARE enough. Something within you is likely ready for integration. You’ve gained great wisdom through your experiences, and this card asks you to hold space for integrating whatever lessons are most prominent for you right now. Trust that you are where you should be, and choose to look for the dynamic meaning unfolding in your story. You are a whole and complex creature, let yourself revel in all facets of your existence. Now is the time to be what you are – magic in motion."
         }
     ],
     "resources": []
