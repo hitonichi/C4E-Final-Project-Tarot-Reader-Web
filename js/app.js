@@ -137,7 +137,7 @@ particlesJS('particles-js',
 const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
 const modalContent = document.getElementById('modal-content');
-
+AOS.init();
 
 function renderContent(content) {
   return () => {
@@ -145,7 +145,8 @@ function renderContent(content) {
     modalWrapper.classList.add('show');
 
     // replace console.log with render content logic
-    modalContent.innerHTML = content;
+    // modalContent.innerHTML = content;
+   
   }
 }
 
@@ -176,6 +177,7 @@ aboutUsBtn.addEventListener('click', () => {
       prevEl: ".swiper-button-prev",
     },
   });
+  
 });
 
 const closeModalBtn = document.getElementById('close-modal');
@@ -224,7 +226,7 @@ function renderMembers() {
     `
   });
   let finalHTML = `
-    <h1 class="heading"><span>meet </span>OUR TEAM</h1>
+   <h1 class="heading"><span>meet </span>OUR TEAM</h1>
     
     <div class="about-list">
       <div class="list">
@@ -238,20 +240,9 @@ function renderMembers() {
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="comments">
-    <form onsubmit="  alert('Cảm ơn phản hồi của bạn') ; reset();return false;">
-      <h3>GET IN TOUCH </h3>
-      <input type="text" id="name" placeholder="Your Name" required>
-      <small class="erro"></small>
-      <input type="email" id="email" placeholder="Email id" required>
-      <small class="erro"></small>
-      <textarea id="massage" rows="4" placeholder="Comments"></textarea>
-      <small class="erro"></small>
-      <button type="submit" id="submitForm">Send</button>
-      <p id="success"></p>
-    </form>
-  </div>
+   
   `
 
   return finalHTML;
+  
 }

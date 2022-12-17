@@ -561,6 +561,7 @@ form {
   width: 90%;
   max-width: 600px;
   border-radius: 10px;
+  height: 450px;
 }
 
 form h3 {
@@ -577,27 +578,35 @@ form textarea {
   margin: 8px 0;
   padding: 17px;
   outline: none;
+
   background: #f5f5f5;
   font-size: 14px;
 }
 form button{
   padding: 15px;
-  background: #ff5361;
+  background: linear-gradient(to right , rgb(255,0,106),rgb(255,67,61));
   color: #fff;
   font-size: 18px;
   border: 0;
   outline: none;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   margin: 20px auto 0;
-  border-radius: 30px;
   transition: all 0.5s ease;
 }
 form button:hover{
   color:#ff5361 ;
   background: #fff;
 }
-
+.error{
+  color: red;
+}
+.error-border{
+  border-bottom: 1px solid red;
+}
+#success{
+  color: #28A745;
+}
 @media (max-width:991px) {
   .heading {
     font-size: 45px;
