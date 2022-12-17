@@ -10,7 +10,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-// Hello world
 particlesJS('particles-js',
 
   {
@@ -151,8 +150,6 @@ function closeModal() {
 }
 
 // Main code
-const readNewBtn = document.getElementById('readNew');
-readNewBtn.addEventListener('click', renderContent('<div>abc</div>'));
 
 const closeModalBtn = document.getElementById('close-modal');
 closeModalBtn.addEventListener('click', closeModal);
