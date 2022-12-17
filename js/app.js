@@ -137,7 +137,6 @@ particlesJS('particles-js',
 const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
 const modalContent = document.getElementById('modal-content');
-AOS.init();
 
 function renderContent(content) {
   return () => {
@@ -145,8 +144,8 @@ function renderContent(content) {
     modalWrapper.classList.add('show');
 
     // replace console.log with render content logic
-    // modalContent.innerHTML = content;
-   
+    modalContent.innerHTML = content;
+
   }
 }
 
@@ -177,7 +176,61 @@ aboutUsBtn.addEventListener('click', () => {
       prevEl: ".swiper-button-prev",
     },
   });
-  
+
+  const nameInput = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const message = document.querySelector("#message");
+  const success = document.querySelector("#success");
+  const errorNodes = document.querySelectorAll(".error");
+  const idForm = document.getElementById('idForm')
+  //validate data
+  idForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    validateForm();
+  });
+
+  function validateForm() {
+    clearMessage();
+    let errorFlag = false;
+    if (nameInput.value.length < 1) {
+      errorNodes[0].innerText = "Name cannot be blank";
+      nameInput.classList.add("error-border");
+      errorFlag = true;
+    }
+    if (!emailIsValid(email.value)) {
+      errorNodes[1].innerText = "Invalid email adress";
+      email.classList.add("error-border");
+      errorFlag = true;
+    }
+    if (message.value.length < 1) {
+      errorNodes[2].innerText = 'Please enter message';
+      message.classList.add('error-border')
+      errorFlag = true;
+
+    }
+    if (!errorFlag) {
+
+      alert("Cảm ơn đóng góp của bạn");
+      idForm.reset();
+    }
+
+  }
+
+  //clear error / success messages
+  function clearMessage() {
+    for (let i = 0; i < errorNodes.length; i++) {
+      errorNodes[i].innerText = ""
+    }
+    success.innerText = "";
+    nameInput.classList.remove('error-border');
+    email.classList.remove("error-border");
+    message.classList.remove('error-border')
+  }
+  function emailIsValid(email) {
+    let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return pattern.test(email);
+
+  }
 });
 
 const closeModalBtn = document.getElementById('close-modal');
@@ -241,8 +294,21 @@ function renderMembers() {
       </div>
     </div>
    
+    <div data-aos="fade-up" class="comments">
+      <form id="idForm">
+        <h3>GET IN TOUCH </h3>
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error"></small>
+        <input type="text" id="email" placeholder="Email id">
+        <small class="error"></small>
+        <textarea id="message" rows="4" placeholder="Comments"></textarea>
+        <small class="error"></small>
+        <button type="submit" id="submitForm">Send</button>
+        <p id="success"></p>
+      </form>
+  </div>
   `
 
   return finalHTML;
-  
+
 }
