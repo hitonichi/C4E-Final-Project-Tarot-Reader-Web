@@ -1,12 +1,7 @@
-import { renderReadingCardContent, handleEvents } from "./readCard.js";
-import {
-    renderMembers,
-    handleEvents as aboutUsHandleEvents,
-} from "./aboutUs.js";
-import {
-    renderRefAndDis,
-    handleEvents as refAndDisHandleEvents,
-} from "./referencesAndDisclaimer.js";
+import { renderReadingCardContent, handleEvents } from './readCard.js';
+import { renderMembers, handleEvents as aboutUsHandleEvents } from './aboutUs.js';
+import { renderRefAndDis, handleEvents as refAndDisHandleEvents } from './referencesAndDisclaimer.js';
+import { renderViewHistory, handleEvents as viewHistoryHandleEvents } from './viewHistory.js';
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -179,11 +174,10 @@ window.onclick = function (event) {
 };
 
 // Main code
-const aboutUsBtn = document.getElementById("aboutUs");
-const readCardBtn = document.getElementById("readNew");
-const Read_Disclaimer_and_References = document.getElementById(
-    "Read-Disclaimer-and-References"
-);
+const aboutUsBtn = document.getElementById('aboutUs');
+const readCardBtn = document.getElementById('readNew');
+const Read_Disclaimer_and_References = document.getElementById('Read-Disclaimer-and-References');
+const viewHistory = document.getElementById('viewHistory');
 
 readCardBtn.addEventListener(
     "click",
@@ -195,9 +189,10 @@ aboutUsBtn.addEventListener(
     renderContent(renderMembers(), aboutUsHandleEvents)
 );
 
-Read_Disclaimer_and_References.addEventListener(
-    "click",
-    renderContent(renderRefAndDis(), refAndDisHandleEvents)
-);
+viewHistory.addEventListener('click', renderContent(
+  renderViewHistory(),
+  viewHistoryHandleEvents
+));
+
 
 
