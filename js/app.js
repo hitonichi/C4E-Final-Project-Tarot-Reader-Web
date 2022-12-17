@@ -1,3 +1,6 @@
+import { renderReadingCardContent, handleEvents } from './readCard.js';
+import { renderMembers, handleEvents as aboutUsHandleEvents } from './aboutUs.js';
+import { renderRefAndDis, handleEvents as refAndDisHandleEvents } from './referencesAndDisclaimer.js';
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -131,49 +134,60 @@ particlesJS('particles-js',
 
 );
 
-const modalOverlay = document.getElementById('modal-overlay');
+export const modalOverlay = document.getElementById('modal-overlay');
 const modalWrapper = document.getElementById('modal-wrapper');
+const modalContent = document.getElementById('modal-content');
 
-function renderContent(content) {
+function renderContent(content, cb) {
   return () => {
     modalOverlay.classList.add('show');
     modalWrapper.classList.add('show');
 
     // replace console.log with render content logic
-    console.log(content);
+    modalContent.innerHTML = content;
+
+    // this function is optional
+    cb?.();
   }
 }
 
-function closeModal() {
+function closeModal(cb) {
   modalOverlay.classList.remove('show');
   modalWrapper.classList.remove('show');
+  cb?.()
 }
-
-// Main code
 
 const closeModalBtn = document.getElementById('close-modal');
 closeModalBtn.addEventListener('click', closeModal);
 
-// Ref and Disclaimer
-const Disclaimer_and_References_overlay = document.getElementById('Disclaimer_and_References_overlay');
-const Disclaimer_and_References = document.getElementById('Disclaimer_and_References');
-
-function render_Disclaimer_and_References() {
-    Disclaimer_and_References_overlay.classList.add('show');
-    Disclaimer_and_References.classList.add('show');
+// click outside modal => hide
+window.onclick = function (event) {
+  if (modalOverlay.classList.contains('show') && modalWrapper.classList.contains('show')) {
+    if (event.target === modalOverlay) {
+      closeModal();
+    }
+  }
 }
 
-function close_Disclaimer_and_References() {
-  Disclaimer_and_References_overlay.classList.remove('show');
-  Disclaimer_and_References.classList.remove('show');
-}
-
-const Disclaimer_and_References_content = "Griner played for a Russian basketball team during the WNBA offseason, and she was arrested on drug smuggling charges shortly prior to Russia's invasion of Ukraine on Feb. 17 before being released on Dec. 9 in a prisoner exchange for convicted arms dealer Viktor Bout. Griner took off from Kelly Field in San Antonio Friday around 11 a.m., CNN confirmed via her agent Lindsay Kagawa Colas. As she boarded the plane, Griner was greeted by Phoenix Mercury General Manager Jim Pitman, Phoenix Mercury President Vince Kozar and her Mercury teammate Diana Taurasi, all of whom made a surprise appearance to welcome her home. Griner is heading back to Arizona, though her representatives would not confirm exactly where, citing security concerns. CNN previously reported that Griner and her wife Cherelle had already made plans to move upon her return to the United States. CNN is reaching out to the Phoenix Mercury about Griner's intention to play on the team this season, but has not heard back yet.";
-document.getElementById('Disclaimer_and_References-content').innerHTML = Disclaimer_and_References_content;
-
+// Main code
+const aboutUsBtn = document.getElementById('aboutUs');
+const readCardBtn = document.getElementById('readNew');
 const Read_Disclaimer_and_References = document.getElementById('Read-Disclaimer-and-References');
-Read_Disclaimer_and_References.addEventListener('click',render_Disclaimer_and_References);
 
-Disclaimer_and_References_overlay.addEventListener('click', close_Disclaimer_and_References);
+readCardBtn.addEventListener('click', renderContent(
+  renderReadingCardContent(),
+  handleEvents
+));
+
+aboutUsBtn.addEventListener('click', renderContent(
+  renderMembers(),
+  aboutUsHandleEvents
+));
+
+Read_Disclaimer_and_References.addEventListener('click', renderContent(
+  renderRefAndDis(),
+  refAndDisHandleEvents
+));
+
 
 

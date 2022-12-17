@@ -8,8 +8,17 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" media="screen" href="css/index.css">
+  <!--==== FONTAWESOME CDN LINK ===-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MedievalSharp">
+  <link rel="stylesheet" href="./css/readCard.css">
+  <link rel="stylesheet" href="./css/aboutUs.css">
+  <link rel="stylesheet" href="./css/referencesAndDisclaimer.css">
 </head>
 
 <body>
@@ -55,54 +64,29 @@
     <a id="readNew" class="nav-link">Get your daily reading</a>
     <a class="nav-link">View your reading history</a>
     <a id="Read-Disclaimer-and-References" class="nav-link">References & Disclaimer</a>
-    <a class="nav-link">About Us</a>
+    <a id="aboutUs" class="nav-link">About Us</a>
   </div>
   <div id="modal-overlay" class="modal-overlay">
+
   </div>
 
   <div id="modal-wrapper" class="modal-wrapper">
     <div class="modal-top">
       <img id="close-modal" style="width: 60px; height: 60px; cursor: pointer;" src="./assets/icons/icons8-close-91.png"
         alt="close-icon" />
-    </div>
-    <!-- <div class="modal-content">
-  
-      </div> -->
-  </div>
 
-  <div id="readCard-modal-wrapper" class="modal-wrapper">
-    <div id="readCard-modal-top">
-      <h2 id="readCard-modal-title">Get your Daily Reading</h2>
-      <img id="readCard-close-modal" style="width: 60px; height: 60px; cursor: pointer;" src="./assets/icons/icons8-close-91.png"
-        alt="close-icon" />
     </div>
-    <div id="readCard-modal-navbar">
-      <div id="readCard-rule" class="readCard-nav-tag readCard-tag-active">Rules</div>
-      <div id="readCard-read" class="readCard-nav-tag">Read a Card</div>
-    </div>
-    <div id="readCard-modal-content">
-      <div id="readCard-content-wrapper">
-        <div id="readCard-dialog">.</div>
-        <div class="light"></div>
-        <button id="readCard-next-btn">Next Step</button>
-      </div>
+    <div class="modal-content" id="modal-content">
+      <!-- alert('Cảm ơn phản hồi của bạn') ; reset();return false; -->
     </div>
   </div>
-
-  <div class = "Disclaimer_and_References_overlay" id = "Disclaimer_and_References_overlay" >
-  </div>
-
-  <div class = "Disclaimer_and_References" id = "Disclaimer_and_References">
-    <div class="Disclaimer_and_References-content" id="Disclaimer_and_References-content">  
-    </div>
-    <div class = "resources" id = "resources">
-      <iframe id = "resources-item" src="https://www.youtube.com/embed/vP4U8uhWmrY?autoplay=0&mute=1"  frameborder="1"></iframe>
-    </div>
-  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/app.js" type="text/javascript"></script>
+  <script type="module" src="js/app.js" type="text/javascript"></script>
   <script src="data.json" type="text/javascript"></script>
   <script type="module" src="./js/readCard.js"></script>
+  <script type="module" src="./js/aboutUs.js"></script>
 </body>
 
 </html>

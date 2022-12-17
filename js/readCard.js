@@ -31,55 +31,44 @@ let readCardContent = `
 </div>
 `;
 
-
-
-
-const readCardModalWrapper = document.getElementById('readCard-modal-wrapper');
-const readCardCloseModalBtn = document.getElementById('readCard-close-modal');
-const readCardModalContent = document.getElementById('readCard-modal-content');
-
-function readCardCloseModal() {
-    modalOverlay.classList.remove('show');
-    readCardModalWrapper.classList.remove('readCard-modal-wrapper-show');
-}
-
-// Main code
-
-readCardCloseModalBtn.addEventListener('click', readCardCloseModal);
-
-
-const readCardRenderContent = () => {
-    return () => {
-        modalOverlay.classList.add('show');
-        readCardModalWrapper.classList.add('readCard-modal-wrapper-show');
-        
-        // replace console.log with render content logic
-        console.log(cards);
-        
-        const ruleNavBtn = document.getElementById('readCard-rule');
-        const readNavBtn = document.getElementById('readCard-read');
-        console.log(ruleNavBtn);
-        console.log(readNavBtn);
-
-        ruleNavBtn.addEventListener('click', () => {
-            readNavBtn.classList.remove('readCard-tag-active');
-            ruleNavBtn.classList.add('readCard-tag-active');
-            readCardRenderBody(ruleContent);
-        })
-        readNavBtn.addEventListener('click', () => {
-            ruleNavBtn.classList.remove('readCard-tag-active');
-            readNavBtn.classList.add('readCard-tag-active');
-            readCardModalContent.innerHTML = '';
-            readCardRenderBody(readCardContent);
-        })
-    }
-}
-
-const readCardRenderBody = (ruleContent) => {
+const readCardRenderBody = (content) => {
+    const readCardModalContent = document.getElementById('readCard-modal-content');
     readCardModalContent.innerHTML = '';
-    readCardModalContent.innerHTML += ruleContent;
+    readCardModalContent.innerHTML += content;
 }
 
-const readCardBtn = document.getElementById('readNew');
+export const renderReadingCardContent = () => {
+    const header = `
+    <div id="readCard-modal-top">
+        <h2 id="readCard-modal-title">Get your Daily Reading</h2>
+        <img id="readCard-close-modal" style="width: 60px; height: 60px; cursor: pointer;"
+        src="./assets/icons/icons8-close-91.png" alt="close-icon" />
+    </div>
+    <div id="readCard-modal-navbar">
+        <div id="readCard-rule" class="readCard-nav-tag readCard-tag-active">Rules</div>
+        <div id="readCard-read" class="readCard-nav-tag">Read a Card</div>
+    </div>
+    `;
+    return `
+        ${header}
+        <div id="readCard-modal-content">
+           ${ruleContent}
+        </div>
+    `;
+}
 
-readCardBtn.addEventListener('click', readCardRenderContent());
+export const handleEvents = () => {
+    const ruleNavBtn = document.getElementById('readCard-rule');
+    const readNavBtn = document.getElementById('readCard-read');
+
+    ruleNavBtn.addEventListener('click', () => {
+        readNavBtn.classList.remove('readCard-tag-active');
+        ruleNavBtn.classList.add('readCard-tag-active');
+        readCardRenderBody(ruleContent);
+    })
+    readNavBtn.addEventListener('click', () => {
+        ruleNavBtn.classList.remove('readCard-tag-active');
+        readNavBtn.classList.add('readCard-tag-active');
+        readCardRenderBody(readCardContent);
+    })
+}
