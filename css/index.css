@@ -187,6 +187,7 @@
 }
 
 .Disclaimer_and_References{
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -195,11 +196,12 @@
   height: 80%;
   overflow: auto;
   max-height: 80%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(225, 249, 255);
   z-index: 999;
   border-radius: 20px;
   padding: 12px;
   display: none;
+  box-shadow: 0px 0px 30px #002e72 inset;
 }
 
 .Disclaimer_and_References::-webkit-scrollbar {
@@ -219,12 +221,29 @@
 }
 
 .Disclaimer_and_References-content {
-  font-size: 45px;
+  font-size: 35px;
+  font-family: "Century", serif;
 }
 .resources{
   display: flex;
   flex-wrap: wrap;
-  gap: 1%;
+  gap: 5%;
+}
+.Disclaimer_and_References_top{
+  font-family: "Century", serif;
+  font-size: 45px;
+  color: white;
+  border: solid 1px blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(0, 35, 148);
+  opacity: 0.65;
+  width: fit-content;
+  padding: 8px;
+  box-shadow: 0px 0px 30px  #ffffff inset;
+  margin: auto;
 }
 #resources-item{
   width: 300px;
@@ -237,6 +256,9 @@
   #resources-item{
     width: 150px;
     height: 100px;
+  }
+  .Disclaimer_and_References_top{
+    font-size: 30px;
   }
 }
 .resources-item{
