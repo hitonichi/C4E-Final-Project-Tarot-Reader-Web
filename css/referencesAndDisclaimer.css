@@ -72,6 +72,12 @@
     width: 300px;
     height: 200px;
   }
+  .Introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+  }
   @media screen and (max-width: 768px) {
     .Disclaimer_and_References-content {
       font-size: 12px;
@@ -80,33 +86,21 @@
       width: 150px;
       height: 100px;
     }
+    .Introduction{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
   }
   .resources-item{
     display: flex;
   }
-  .Tarot-meaning{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-  }
   .prefix{
     font-size: 20px;
   }
-  .Tarot-introduction{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-  }
-  .prg1{
-    opacity: 0.9;
-    width: 100%;
-  }
-  .prg2{
-    opacity: 0.9;
-    width: 100%;
-  }
+
+
   .show {
     display: block;
   }
