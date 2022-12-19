@@ -5,23 +5,19 @@ let cards = data.cards;
 let ruleContent = `
 <div id="readCard-content-wrapper">
     <h3>What is a Daily Reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
+    <p>This reading type will let you know about some aspect of your currently. If varies from some minor factors (new encouters, new opportunies,...) to some major changes (new career, serious matter,...).</p>
     <br>
     <h3>What should you expect for this type of reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
+    <p>DON'T follow the guidance 100%, since these are just the recommendations, some clues for you to think about your situation. The decision is all yours.</p>
     <br>
     <h3>How frequent should I get my reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
+    <p>One card reading is often read once a day. However, doing more than one is perfectly fine. You may be able to remember the cards better on the way!</p>
     <br>
-    <h3>What is a Daily Reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
+    <h3>Is there any other reading style?</h3>
+    <p>There are, however, there is currently one reading style on this website.</p>
     <br>
-    <h3>What should you expect for this type of reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
-    <br>
-    <h3>How frequent should I get my reading?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non iure! Sequi molestiae earum, dolorem nobis totam, magnam quo dolores impedit mollitia quis dolor sint corrupti similique odio libero accusantium.</p>
-    <br>
+    <h3>Will anything bad happen if I get bad cards?</h3>
+    <p>Not particularly true. The underlaying meanings of the negative cards are that they alert you of incoming threat, which help raising your awareness to the surroundings. Hence, they actually rather play the role of indicators.</p>
 </div>
 `;
 
@@ -120,7 +116,7 @@ export const handleEvents = () => {
                             <div id="readCard-card-key">${cards[id].keyword}</div>
                         </div>
                         <div id="readCard-card-detail">${cards[id].detail}</div>
-                        <div id="readCard-receive-date">${readDate.toDateString()}</div>
+                        <div id="readCard-receive-date">- ${readDate.toDateString()} -</div>
                     </div>
                 </div>
                 `;
