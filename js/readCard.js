@@ -139,6 +139,5 @@ const save = (newCard) => {
 }
 
 export const getHistory = () => {
-    let res = localStorage.getItem('history');
-    return res;
+    return JSON.parse(localStorage.getItem('history'));
 }
