@@ -205,5 +205,8 @@ aboutUsBtn.addEventListener(
 
 viewHistory.addEventListener(
     "click",
-    renderContent(renderViewHistory())
+    () => {
+        const historyContent = renderViewHistory();
+        renderContent(historyContent)();
+    }
 );

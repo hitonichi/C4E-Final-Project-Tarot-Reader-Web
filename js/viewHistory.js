@@ -4,14 +4,14 @@ import data from '../data.json' assert {type: 'json'};
 let cards = data.cards;
 
 export const renderViewHistory = () => {
-    let readCards = JSON.parse(getHistory());
+    let readCards = getHistory();
     let content = `
     <div id="history-header-top">
         <h2 id="history-header-title">Recent Cards</h2>
     </div>
     <div class="recent-card-container">
     `;
-    if (readCards != null) readCards.forEach(card => {
+    if (readCards?.length > 0) readCards.forEach(card => {
         let cardData = cards[card.cardId];
         content += `
         <div class ="recent-card" >

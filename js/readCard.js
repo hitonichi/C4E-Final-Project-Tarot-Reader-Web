@@ -127,18 +127,17 @@ export const handleEvents = () => {
 }
 
 const save = (newCard) => {
-    let readCards = JSON.parse(getHistory());
+    let readCards = getHistory();
     console.log(readCards);
     if (readCards == null) {
         readCards = [newCard];
     }
     else {
-        readCards = [...readCards, newCard];
+        readCards = [newCard, ...readCards];
     }
     localStorage.setItem('history', JSON.stringify(readCards));
 }
 
 export const getHistory = () => {
-    let res = localStorage.getItem('history');
-    return res;
+    return JSON.parse(localStorage.getItem('history'));
 }
