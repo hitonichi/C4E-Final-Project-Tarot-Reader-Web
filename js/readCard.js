@@ -120,7 +120,25 @@ export const handleEvents = () => {
                     </div>
                 </div>
                 `;
+                save({id: readDate, cardId: id, lastUpdate: readDate.toDateString()});
             }
         })
     })
+}
+
+const save = (newCard) => {
+    let readCards = JSON.parse(getHistory());
+    console.log(readCards);
+    if (readCards == null) {
+        readCards = [newCard];
+    }
+    else {
+        readCards = [...readCards, newCard];
+    }
+    localStorage.setItem('history', JSON.stringify(readCards));
+}
+
+export const getHistory = () => {
+    let res = localStorage.getItem('history');
+    return res;
 }

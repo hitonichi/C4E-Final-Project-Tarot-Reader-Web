@@ -8,8 +8,7 @@ import {
     handleEvents as refAndDisHandleEvents,
 } from "./referencesAndDisclaimer.js";
 import {
-    renderViewHistory,
-    handleEvents as viewHistoryHandleEvents,
+    renderViewHistory
 } from "./viewHistory.js";
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
@@ -206,5 +205,5 @@ aboutUsBtn.addEventListener(
 
 viewHistory.addEventListener(
     "click",
-    renderContent(renderViewHistory(), viewHistoryHandleEvents)
+    renderContent(renderViewHistory())
 );
