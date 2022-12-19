@@ -129,11 +129,11 @@ export const handleEvents = () => {
 const save = (newCard) => {
     let readCards = JSON.parse(getHistory());
     console.log(readCards);
-    if (readCards == null) {
-        readCards = [newCard];
+    if (readCards?.length > 0) {
+        readCards = [...readCards, newCard];
     }
     else {
-        readCards = [...readCards, newCard];
+        readCards = [newCard];
     }
     localStorage.setItem('history', JSON.stringify(readCards));
 }
