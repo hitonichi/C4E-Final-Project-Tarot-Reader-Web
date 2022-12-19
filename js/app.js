@@ -1,7 +1,16 @@
-import { renderReadingCardContent, handleEvents } from './readCard.js';
-import { renderMembers, handleEvents as aboutUsHandleEvents } from './aboutUs.js';
-import { renderRefAndDis, handleEvents as refAndDisHandleEvents } from './referencesAndDisclaimer.js';
-import { renderViewHistory, handleEvents as viewHistoryHandleEvents } from './viewHistory.js';
+import { renderReadingCardContent, handleEvents } from "./readCard.js";
+import {
+    renderMembers,
+    handleEvents as aboutUsHandleEvents,
+} from "./aboutUs.js";
+import {
+    renderRefAndDis,
+    handleEvents as refAndDisHandleEvents,
+} from "./referencesAndDisclaimer.js";
+import {
+    renderViewHistory,
+    handleEvents as viewHistoryHandleEvents,
+} from "./viewHistory.js";
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -136,8 +145,8 @@ particlesJS(
 );
 
 export const modalOverlay = document.getElementById("modal-overlay");
-const modalWrapper = document.getElementById("modal-wrapper");
-const modalContent = document.getElementById("modal-content");
+export const modalWrapper = document.getElementById("modal-wrapper");
+export const modalContent = document.getElementById("modal-content");
 
 function renderContent(content, cb) {
     return () => {
@@ -155,6 +164,10 @@ function renderContent(content, cb) {
 function closeModal(cb) {
     modalOverlay.classList.remove("show");
     modalWrapper.classList.remove("show");
+
+    // For readCard
+    modalWrapper.classList.remove("readCard-modal-wrapper-show");
+
     cb?.();
 }
 
@@ -174,10 +187,12 @@ window.onclick = function (event) {
 };
 
 // Main code
-const aboutUsBtn = document.getElementById('aboutUs');
-const readCardBtn = document.getElementById('readNew');
-const Read_Disclaimer_and_References = document.getElementById('Read-Disclaimer-and-References');
-const viewHistory = document.getElementById('viewHistory');
+const aboutUsBtn = document.getElementById("aboutUs");
+const readCardBtn = document.getElementById("readNew");
+const Read_Disclaimer_and_References = document.getElementById(
+    "Read-Disclaimer-and-References"
+);
+const viewHistory = document.getElementById("viewHistory");
 
 readCardBtn.addEventListener(
     "click",
@@ -189,10 +204,7 @@ aboutUsBtn.addEventListener(
     renderContent(renderMembers(), aboutUsHandleEvents)
 );
 
-viewHistory.addEventListener('click', renderContent(
-  renderViewHistory(),
-  viewHistoryHandleEvents
-));
-
-
-
+viewHistory.addEventListener(
+    "click",
+    renderContent(renderViewHistory(), viewHistoryHandleEvents)
+);
