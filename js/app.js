@@ -167,6 +167,9 @@ function closeModal(cb) {
 
     // For readCard
     modalWrapper.classList.remove("readCard-modal-wrapper-show");
+    // For ref and disclaim
+    modalWrapper.classList.remove("Disclaimer_and_References");
+    modalContent.classList.remove("Disclaimer_and_References-content");
 
     cb?.();
 }
@@ -199,11 +202,15 @@ readCardBtn.addEventListener(
     renderContent(renderReadingCardContent(), handleEvents)
 );
 
+Read_Disclaimer_and_References.addEventListener(
+    "click",
+    renderContent(renderRefAndDis(), refAndDisHandleEvents)
+)
+
 aboutUsBtn.addEventListener(
     "click",
     renderContent(renderMembers(), aboutUsHandleEvents)
 );
-
 viewHistory.addEventListener(
     "click",
     renderContent(renderViewHistory(), viewHistoryHandleEvents)
