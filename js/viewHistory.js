@@ -11,7 +11,7 @@ export const renderViewHistory = () => {
     </div>
     <div class="recent-card-container">
     `;
-    if (readCards != null) readCards.forEach(card => {
+    if (readCards?.length > 0) readCards.forEach(card => {
         let cardData = cards[card.cardId];
         content += `
         <div class ="recent-card" >
