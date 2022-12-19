@@ -157,6 +157,9 @@ function closeModal(cb) {
 
   // For readCard
   modalWrapper.classList.remove('readCard-modal-wrapper-show');
+  // For Disclaimer and Reference
+  modalWrapper.classList.remove('Disclaimer_and_References');
+  modalContent.classList.remove('Disclaimer_and_References-content');
 
   cb?.();
 }

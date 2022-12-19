@@ -1,15 +1,42 @@
+import data from '../data.json' assert {type: 'json'};
+import {modalWrapper, modalContent} from './app.js';
+
+let vid = data.resources;
+console.log(vid);
 export const renderRefAndDis = () => {
     return `
+        <div class = "prg1">
+            <p class = "Tarot-introduction"> What is the tarot ? </p>
+            <div class = "prefix">
+                The Tarot is a symbolic map of consciousness that encompasses our journey through life, both spiritually and practically.
+            </div> 
+            <div class = "content">
+                Tarot reading is the practice of divining wisdom and guidance through a specific spread (or layout) of Tarot cards. However, contrary to popular belief, the cards do not simply tell your fortune, and one does not have to be a psychic to give Tarot readings. The cards are meant to provide insight into the innermost truths of your higher self. In other words, the cards provide an evolved awareness of what you already know deep within. The origin of the Tarot is unknown, but we do have documented references of Tarot card use back to fourteenth century Europe. The Tarot has been used as an oracle, in the basic form we know today, since the beginning of the seventeenth century.  
+            </div>
+        </div>
+        <br>
+        <div class = "prg2">
+            <p class = "Tarot-meaning"> The Meaning of the Tarot </p>
+            <div class = "content">
+                There are 22 cards of the Major Arcana, which divulge greater secrets, and 56 cards of the Minor Arcana, which divulge lesser secrets and are further divided into four suits. The suits of the Minor Arcana include Wands, Swords, Cups, and Pentacles. The fourteen cards in each suit are numbered Ace through Ten, plus the Court Cards: Page (Princess), Knight (Prince), Queen, and King. Decks can vary some in naming. The suits and the individual cards are not always called the same thing, but their core meanings are fairly universal. For example, in some decks, the Knight equates to the King and not the Prince. Most decks come with a booklet you can use to get familiar with its specifics. The Minor Arcana of the Tarot symbolize daily aspects of life, giving insight into our challenges, talents, opportunities, and experience of ups and downs. Each suit represents an element: Wands are Fire, Swords are Air, Cups are Water, and Pentacles are Earth. The suits can reflect attitude and temperament, such as a fiery person or someone who is “up in the air” or “down to earth.” Determining a card’s significance is dependent upon the question, the reader, the person receiving the reading, and the placement of other cards in the spread. The Major Arcana are numbered 0 through 21, starting with The Fool, and ending with The World. These cards align with the milestones of life’s story or The Hero’s Journey which can be explored further with Joseph Campbell’s book “The Hero With a Thousand Faces.” In this sense, the cards of the Major Arcana represent the 22 inevitable phases or passages of every journey, which we’ll all encounter during our lives (not necessarily in this order). It’s also possible for these phases to repeat themselves, and recur multiple times throughout one’s life, creating a cyclical nature in which there is no true beginning or end.
+            </div>
+        </div>
         <div class="Disclaimer_and_References-content" id="Disclaimer_and_References-content">
         </div>
         <div class="resources" id="resources">
-        <iframe id="resources-item" src="https://www.youtube.com/embed/vP4U8uhWmrY?autoplay=0&mute=1"
-            frameborder="1"></iframe>
+            <iframe id="resources-item" src="https://www.youtube.com/embed/-phaUChto9o?autoplay=0&mute=1"
+                frameborder="1"></iframe>
+            <iframe id="resources-item" src="https://www.youtube.com/embed/9nVZ1cDL4Kc?autoplay=0&mute=1"
+                frameborder="1"></iframe>
+            <iframe id="resources-item" src="https://www.youtube.com/embed/4-CjXCKwj2I?autoplay=0&mute=1"
+                frameborder="1"></iframe>
+            <iframe id="resources-item" src="https://www.youtube.com/embed/47nKtmHBp40?autoplay=0&mute=1"
+                frameborder="1"></iframe>
         </div>
     `
 }
 
-export const handleEvents = () => {
-    const Disclaimer_and_References_content = "Griner played for a Russian basketball team during the WNBA offseason, and she was arrested on drug smuggling charges shortly prior to Russia's invasion of Ukraine on Feb. 17 before being released on Dec. 9 in a prisoner exchange for convicted arms dealer Viktor Bout. Griner took off from Kelly Field in San Antonio Friday around 11 a.m., CNN confirmed via her agent Lindsay Kagawa Colas. As she boarded the plane, Griner was greeted by Phoenix Mercury General Manager Jim Pitman, Phoenix Mercury President Vince Kozar and her Mercury teammate Diana Taurasi, all of whom made a surprise appearance to welcome her home. Griner is heading back to Arizona, though her representatives would not confirm exactly where, citing security concerns. CNN previously reported that Griner and her wife Cherelle had already made plans to move upon her return to the United States. CNN is reaching out to the Phoenix Mercury about Griner's intention to play on the team this season, but has not heard back yet.";
-    document.getElementById('Disclaimer_and_References-content').innerHTML = Disclaimer_and_References_content;
+export const  handleEvents = () => {
+    modalWrapper.classList.add('Disclaimer_and_References');
+    modalContent.classList.add('Disclaimer_and_References-content');
 }

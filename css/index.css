@@ -371,7 +371,17 @@ canvas {
   justify-content: flex-end;
   width: 100%;
 }
-
+.modal-top img{
+  width: 60px;
+  height: 60px; 
+  cursor: pointer;
+}
+@media screen and (max-width: 768px){
+  .modal-top img{
+     width: 30px; 
+     height: 30px;
+  }
+}
 
 .show {
   display: block;

@@ -19,13 +19,14 @@
     height: 80%;
     overflow: auto;
     max-height: 80%;
-    background-color: rgb(255, 255, 255);
+    background: radial-gradient(ellipse at bottom, #0073ff 0%, #a0a0a0 100%);
     z-index: 999;
     border-radius: 20px;
     padding: 12px;
     display: none;
   }
   
+
   .Disclaimer_and_References::-webkit-scrollbar {
     width: 20px;
   }
@@ -43,7 +44,24 @@
   }
   
   .Disclaimer_and_References-content {
-    font-size: 45px;
+    font-size: 20px;
+    color: #e6d8d8; 
+    font-family: "MedievalSharp", serif;
+    font-weight: 400; 
+    margin: 0 0 24px;
+    font-family: "Verdana";
+  }
+  .Disclaimer_and_References-title{
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    border: solid 1px #d6dee1;
+    background-color: rgb(61, 68, 129);
+    margin: auto;
+  }
+  .Disclaimer_and_References-title:hover{
+    background-color: rgb(255, 255, 255);
   }
   .resources{
     display: flex;
@@ -56,7 +74,7 @@
   }
   @media screen and (max-width: 768px) {
     .Disclaimer_and_References-content {
-      font-size: 24px;
+      font-size: 12px;
     }
     #resources-item{
       width: 150px;
@@ -65,6 +83,29 @@
   }
   .resources-item{
     display: flex;
+  }
+  .Tarot-meaning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+  }
+  .prefix{
+    font-size: 20px;
+  }
+  .Tarot-introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+  }
+  .prg1{
+    opacity: 0.9;
+    width: 100%;
+  }
+  .prg2{
+    opacity: 0.9;
+    width: 100%;
   }
   .show {
     display: block;
