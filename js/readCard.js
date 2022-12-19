@@ -1,4 +1,5 @@
 import data from '../data.json' assert {type: 'json'};
+import {modalWrapper} from './app.js';
 
 let cards = data.cards;
 let ruleContent = `
@@ -39,11 +40,6 @@ const readCardRenderBody = (content) => {
 
 export const renderReadingCardContent = () => {
     const header = `
-    <div id="readCard-modal-top">
-        <h2 id="readCard-modal-title">Get your Daily Reading</h2>
-        <img id="readCard-close-modal" style="width: 60px; height: 60px; cursor: pointer;"
-        src="./assets/icons/icons8-close-91.png" alt="close-icon" />
-    </div>
     <div id="readCard-modal-navbar">
         <div id="readCard-rule" class="readCard-nav-tag readCard-tag-active">Rules</div>
         <div id="readCard-read" class="readCard-nav-tag">Read a Card</div>
@@ -58,6 +54,10 @@ export const renderReadingCardContent = () => {
 }
 
 export const handleEvents = () => {
+    console.log(modalWrapper);
+    // modalWrapper.classList.remove('show');
+    modalWrapper.classList.add('readCard-modal-wrapper-show');
+    
     const ruleNavBtn = document.getElementById('readCard-rule');
     const readNavBtn = document.getElementById('readCard-read');
 

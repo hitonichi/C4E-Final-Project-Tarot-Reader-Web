@@ -1,11 +1,14 @@
 /* Reading Cards */
 .readCard-modal-wrapper-show {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   background-color: #e5d4e8;
   box-shadow: 0px 0px 30px #724200 inset;
 }
 
+.modal-content {
+  flex: 1;
+}
 
 #readCard-modal-top {
   height: 60px;
@@ -41,16 +44,21 @@
   border-bottom: 1px solid #985e00;
 }
 
+.readCard-nav-tag {
+  height: 60px;
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
 .readCard-tag-active {
   background-color: #f7ddb4;
   color: #985e00;
-}
-
-.readCard-nav-tag {
-  flex: 1;
-  text-align: center;
-  padding: 8px;
-  cursor: pointer;
 }
 
 .readCard-nav-tag:hover, #readCard-next-btn:hover {
@@ -70,6 +78,7 @@
 
 #readCard-modal-content {
   height: 100%;
+  flex:1;
   padding: 10px;
 }
 
