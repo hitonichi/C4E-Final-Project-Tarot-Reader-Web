@@ -127,7 +127,7 @@ export const handleEvents = () => {
 }
 
 const save = (newCard) => {
-    let readCards = JSON.parse(getHistory());
+    let readCards = getHistory();
     console.log(readCards);
     if (readCards?.length > 0) {
         readCards = [...readCards, newCard];
