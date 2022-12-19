@@ -1,5 +1,5 @@
 import data from '../data.json' assert {type: 'json'};
-import {modalWrapper} from './app.js';
+import {modalWrapper, modalContent} from './app.js';
 
 let cards = data.cards;
 let ruleContent = `
@@ -24,11 +24,34 @@ let ruleContent = `
     <br>
 </div>
 `;
+
+let dialogs = [
+    'Welcome to the Daily Reading section. We will let you ask yourself some questions during the reading. Please press the \'Next step\' to go to the next section.',
+    'First, think about what you want to know most today...',
+    '... and what is on your mind recently...',
+    '... you may think of some people, some events...',
+    '... let\'s confirm your thoughts and receive the reading.'
+]
+
 let readCardContent = `
 <div id="readCard-content-wrapper">
-    <div id="readCard-dialog">.</div>
+    <div id="readCard-dialog">${dialogs[0]}</div>
     <div class="light"></div>
     <button id="readCard-next-btn">Next Step</button>
+</div>
+`;
+
+let readCardResult = `
+<div id="readCard-result-wrapper">
+    <div id="readCard-img-holder">
+        <img src="">
+    </div>
+    <div id="readCard-card-content">
+        <div id="readCard-card-name"></div>
+        <div id="readCard-card-key"></div>
+        <div id="readCard-card-detail"></div>
+        <div id="readCard-receive-date"></div>
+    </div>
 </div>
 `;
 
@@ -70,5 +93,38 @@ export const handleEvents = () => {
         ruleNavBtn.classList.remove('readCard-tag-active');
         readNavBtn.classList.add('readCard-tag-active');
         readCardRenderBody(readCardContent);
+
+        let step = 1;
+        let readNxtBtn = document.getElementById('readCard-next-btn');
+        readNxtBtn.addEventListener('click', () => {
+            if (step < dialogs.length) {
+                let dialogBox = document.getElementById('readCard-dialog');
+                dialogBox.innerHTML = dialogs[step];
+                readNxtBtn.style.display = 'none';
+                setTimeout(() => {
+                    readNxtBtn.style.display = 'block';
+                }, '1000')
+                step++;
+            }
+            else {
+                let id = Math.floor(Math.random() * 78);
+                let readDate = new Date();
+                modalContent.innerHTML = `
+                <div id="readCard-result-wrapper">
+                    <div id="readCard-img-holder">
+                        <img src=".${cards[id].src}.png">
+                    </div>
+                    <div id="readCard-card-content">
+                        <div id="readCard-card-title">
+                            <div id="readCard-card-name">- ${cards[id].name} -</div>
+                            <div id="readCard-card-key">${cards[id].keyword}</div>
+                        </div>
+                        <div id="readCard-card-detail">${cards[id].detail}</div>
+                        <div id="readCard-receive-date">${readDate.toDateString()}</div>
+                    </div>
+                </div>
+                `;
+            }
+        })
     })
 }

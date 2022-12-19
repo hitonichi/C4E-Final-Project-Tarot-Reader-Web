@@ -136,7 +136,7 @@ particlesJS('particles-js',
 
 export const modalOverlay = document.getElementById('modal-overlay');
 export const modalWrapper = document.getElementById('modal-wrapper');
-const modalContent = document.getElementById('modal-content');
+export const modalContent = document.getElementById('modal-content');
 
 function renderContent(content, cb) {
   return () => {
