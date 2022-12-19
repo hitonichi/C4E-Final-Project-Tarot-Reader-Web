@@ -135,8 +135,8 @@ particlesJS('particles-js',
 );
 
 export const modalOverlay = document.getElementById('modal-overlay');
-const modalWrapper = document.getElementById('modal-wrapper');
-const modalContent = document.getElementById('modal-content');
+export const modalWrapper = document.getElementById('modal-wrapper');
+export const modalContent = document.getElementById('modal-content');
 
 function renderContent(content, cb) {
   return () => {
@@ -154,7 +154,11 @@ function renderContent(content, cb) {
 function closeModal(cb) {
   modalOverlay.classList.remove('show');
   modalWrapper.classList.remove('show');
-  cb?.()
+
+  // For readCard
+  modalWrapper.classList.remove('readCard-modal-wrapper-show');
+
+  cb?.();
 }
 
 const closeModalBtn = document.getElementById('close-modal');
