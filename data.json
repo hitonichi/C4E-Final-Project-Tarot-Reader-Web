@@ -542,7 +542,7 @@
         {
             "id": "78",
             "name": "The World",
-            "src": "./assets/images/data/21",
+            "src": "./assets/images/data/world_21",
             "keyword": "Completion, Wholeness, Contentment",
             "detail": "This card often shows up to remind you that you are whole and complete exactly as you are. Even when you feel lacking or not enough, the World reminds you that you ARE enough. Something within you is likely ready for integration. You've gained great wisdom through your experiences, and this card asks you to hold space for integrating whatever lessons are most prominent for you right now. Trust that you are where you should be, and choose to look for the dynamic meaning unfolding in your story. You are a whole and complex creature, let yourself revel in all facets of your existence. Now is the time to be what you are - magic in motion."
         }
@@ -550,28 +550,28 @@
     "members": [
         {
             "id": 0,
-            "name": "Đỗ Duy Khang",
+            "name": "Khang",
             "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 1,
-            "name": "Trần Nhật Duy",
-            "image": "assets/images/data/nhat-duy.png"
+            "name": "Khang",
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 2,
-            "name": "Đặng Hòa Gia",
-            "image": "assets/images/data/gia.PNG"
+            "name": "Khang",
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 3,
-            "name": "Nguyễn Hữu Thọ",
-            "image": "assets/images/data/huutho.PNG"
+            "name": "Khang",
+            "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 4,
-            "name": "Nguyễn Vũ Khánh",
-            "image": "assets/images/data/Khanh.PNG"
+            "name": "Khang",
+            "image": "assets/images/data/image1.jpg"
         }
     ],
     "resources": [
