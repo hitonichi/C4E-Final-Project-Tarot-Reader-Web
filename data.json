@@ -550,28 +550,28 @@
     "members": [
         {
             "id": 0,
-            "name": "Khang",
+            "name": "Đỗ Duy Khang",
             "image": "assets/images/data/image1.jpg"
         },
         {
             "id": 1,
-            "name": "Khang",
-            "image": "assets/images/data/image1.jpg"
+            "name": "Trần Nhật Duy",
+            "image": "assets/images/data/nhat-duy.png"
         },
         {
             "id": 2,
-            "name": "Khang",
-            "image": "assets/images/data/image1.jpg"
+            "name": "Đặng Hòa Gia",
+            "image": "assets/images/data/gia.PNG"
         },
         {
             "id": 3,
-            "name": "Khang",
-            "image": "assets/images/data/image1.jpg"
+            "name": "Nguyễn Hữu Thọ",
+            "image": "assets/images/data/huutho.PNG"
         },
         {
             "id": 4,
-            "name": "Khang",
-            "image": "assets/images/data/image1.jpg"
+            "name": "Nguyễn Vũ Khánh",
+            "image": "assets/images/data/Khanh.PNG"
         }
     ],
     "resources": [
