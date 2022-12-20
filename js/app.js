@@ -8,9 +8,10 @@ import {
     handleEvents as refAndDisHandleEvents,
 } from "./referencesAndDisclaimer.js";
 import {
-    renderViewHistory,
-    handleEvents as viewHistoryHandleEvents,
+    renderViewHistory
 } from "./viewHistory.js";
+import { renderAllCards, handleEvents as allCardsHandleEvents } from './gallery.js';
+
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -196,6 +197,7 @@ const Read_Disclaimer_and_References = document.getElementById(
     "Read-Disclaimer-and-References"
 );
 const viewHistory = document.getElementById("viewHistory");
+const view_all_cards = document.getElementById('gallery');
 
 readCardBtn.addEventListener(
     "click",
@@ -213,5 +215,13 @@ aboutUsBtn.addEventListener(
 );
 viewHistory.addEventListener(
     "click",
-    renderContent(renderViewHistory(), viewHistoryHandleEvents)
+    () => {
+        const historyContent = renderViewHistory();
+        renderContent(historyContent)();
+    }
 );
+
+view_all_cards.addEventListener('click', renderContent(
+  renderAllCards(), 
+  allCardsHandleEvents
+));
